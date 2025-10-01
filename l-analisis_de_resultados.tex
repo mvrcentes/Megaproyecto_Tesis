@@ -1,0 +1,68 @@
+% l-analisis_de_resultados.tex
+% !TEX root = z-main.tex
+
+\section{Análisis de resultados}
+
+Este capítulo discute el conjunto de modelos desarrollados (Montículos 1, 3, 7, 12, 13 y La Palangana), analizando el flujo de trabajo empleado y los resultados alcanzados en tres etapas: modelado geométrico, aplicación de materiales/texturas e integración prevista a un ambiente de realidad aumentada (RA). Se incluyen, además, consideraciones de validación arqueológica, rendimiento, limitaciones y líneas de trabajo futuro.
+
+\subsection{Modelado geométrico}
+
+Se completó el modelado tridimensional de los seis montículos propuestos siguiendo un procedimiento uniforme. El flujo por etapas (malla $\rightarrow$ sólido $\rightarrow$ texturizado) permitió validar progresivamente la calidad del resultado:
+\begin{itemize}
+    \item \textbf{Geometría base (wireframe).} Esta vista facilitó la inspección de proporciones, alineación de escalones, continuidad de taludes y simetrías. Fue útil para detectar y corregir aristas/caras innecesarias, evitar geometría y asegurar una topología limpia.
+    \item \textbf{Volumetría (sólido).} La visualización sin materiales aisló la forma general de cada montículo y ayudó a comprobar la relación entre plataformas, escalinatas y superestructuras, así como la pendiente y los cambios de nivel.
+    \item \textbf{Consistencia métrica.} Se cuidó la escala relativa entre elementos y la coherencia global del conjunto, de acuerdo con los registros consultados. La ubicación del origen y la orientación de los ejes se mantuvieron de forma homogénea para simplificar futuras exportaciones.
+\end{itemize}
+
+\subsection{Texturizado y materiales}
+
+La aplicación de materiales se orientó a reflejar acabados de barro, paja y maderas plausibles para Kaminaljuyú, manteniendo uniformidad visual entre modelos:
+\begin{itemize}
+    \item \textbf{Criterios visuales.} Se priorizaron gamas de barro y rojizas en superficies expuestas, y tonos pétreos para bordes o elementos constructivos, siguiendo recomendaciones del área de Arqueología.
+    \item \textbf{UV y repetición.} Se cuidó el desplegado UV para minimizar estiramientos perceptibles y favorecer patrones repetibles sin artefactos notorios en planos amplios (plataformas y taludes).
+    \item \textbf{Preparación para RA.} La cantidad de materiales se mantuvo acotada para reducir mallas, y las texturas pueden consolidarse y emplear compresión en la exportación.
+\end{itemize}
+
+\subsection{Modelos en ambiente virtual (RA)}
+
+Los modelos quedaron listos para su integración a un visualizador RA. Para su desempeño y fidelidad se recomiendan las siguientes pautas:
+\begin{itemize}
+    \item \textbf{Formato de intercambio.} Exportación en glTF/GLB con materiales PBR sencillos (base color, oclusión/roughness/metalness si aplica) y coordenadas en metros.
+    \item \textbf{Rendimiento.} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item \textbf{Experiencia y anclaje.}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{itemize}
+
+\subsection{Validación arqueológica y coherencia entre modelos}
+
+El conjunto mantiene una lectura coherente con los rasgos registrados para Kaminaljuyú:
+\begin{itemize}
+    \item \textbf{Morfología escalonada.} Las proporciones de plataformas y la relación con la escalinata principal son consistentes entre montículos, respetando las variaciones particulares observadas en cada caso.
+\end{itemize}
+
+\subsection{Comparación y síntesis del conjunto}
+
+De forma conjunta, los resultados muestran:
+\begin{itemize}
+    \item \textbf{Reproducibilidad del flujo.} El mismo pipeline produjo resultados consistentes, lo que facilita su escalamiento a nuevos montículos o variantes.
+    \item \textbf{Balance fidelidad–rendimiento.} La simplificación geométrica se mantuvo dentro de límites que preservan los rasgos constructivos necesarios.
+    \item \textbf{Preparación para usos educativos.} La representación tridimensional de los montículos facilita la exploración virtual, permitiendo a estudiantes y público general aproximarse a cómo eran originalmente estas estructuras y comprender mejor su valor histórico y cultural.
+\end{itemize}
+
+\subsection{Limitaciones}
+
+\begin{itemize}
+    \item \textbf{Datos de partida.} Algunas suposiciones de materiales y acabado superficial son plausibles pero no definitivas; podrían refinarse con campañas de documentación adicionales.
+    \item \textbf{Iluminación de referencia.} Las vistas de \emph{viewport} no equivalen a un render físicamente basado; el aspecto puede variar con condiciones de iluminación realistas en RA.
+    \item \textbf{Detalle fino.} Elementos menores (erosión, irregularidades, grietas) fueron simplificados para priorizar legibilidad y rendimiento.
+\end{itemize}
+
+\subsection{Trabajo futuro}
+
+\begin{itemize}
+    \item \textbf{Afinar materiales PBR.} Incorporar mapas de normales y oclusión ambiental derivados de texturas reales o fotogrametría puntual para detalles finos.
+    \item \textbf{Ampliación del corpus.} Extender el pipeline a otros montículos o variantes históricas y documentar discrepancias para análisis comparativo.
+\end{itemize}
+
+\subsection{Conclusión del capítulo}
+
+El conjunto de modelos cumple con los objetivos propuestos: representa de forma clara la morfología de los montículos, aplica materiales plausibles y está preparado para su despliegue en un entorno de realidad aumentada. La uniformidad del flujo asegura reproducibilidad y sienta bases sólidas para mejoras incrementales de fidelidad y desempeño en futuras iteraciones.

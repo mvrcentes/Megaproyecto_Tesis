@@ -1,0 +1,416 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Kwei2019}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4b05094565df11f7853745a25495c7f5}{%
+           family={Kwei},
+           familyi={K\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Guatemala.com}%
+      }
+      \strng{namehash}{4b05094565df11f7853745a25495c7f5}
+      \strng{fullhash}{4b05094565df11f7853745a25495c7f5}
+      \strng{fullhashraw}{4b05094565df11f7853745a25495c7f5}
+      \strng{bibnamehash}{4b05094565df11f7853745a25495c7f5}
+      \strng{authorbibnamehash}{4b05094565df11f7853745a25495c7f5}
+      \strng{authornamehash}{4b05094565df11f7853745a25495c7f5}
+      \strng{authorfullhash}{4b05094565df11f7853745a25495c7f5}
+      \strng{authorfullhashraw}{4b05094565df11f7853745a25495c7f5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{5}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Horarios y precios del Parque Arqueológico Kaminaljuyú}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://aprende.guatemala.com/cultura-guatemalteca/actualidad/horarios-precios-parque-arqueologico-kaminaljuyu/
+      \endverb
+      \verb{url}
+      \verb https://aprende.guatemala.com/cultura-guatemalteca/actualidad/horarios-precios-parque-arqueologico-kaminaljuyu/
+      \endverb
+    \endentry
+    \entry{hoover2010bio}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=d0d9e63f547a8b96ca1dcc8db44cd721}{%
+           family={Hoover},
+           familyi={H\bibinitperiod},
+           given={Aaron\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=196f602b57d80f69a4642ea05e327c5e}{%
+           family={Burden},
+           familyi={B\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d08b7a7bde2f73e205b49e83117d2f31}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Xiao-Yu},
+           giveni={X\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d756b35e7b530d260e5a0807d1953354}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={S\bibnamedelima Shankar},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=754fce70cc426f9abfe3308640492e6a}{%
+           family={Fearing},
+           familyi={F\bibinitperiod},
+           given={Ronald\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{11573c3ea48f6e87892aa07054d7d420}
+      \strng{fullhash}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{fullhashraw}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{bibnamehash}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{authorbibnamehash}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{authornamehash}{11573c3ea48f6e87892aa07054d7d420}
+      \strng{authorfullhash}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{authorfullhashraw}{a54f882dc1689cf7e7fc060fd8344526}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Biomedical Robotics and Biomechatronics (BioRob), 2010 3rd IEEE RAS and EMBS International Conference on}
+      \field{title}{Bio-inspired design and dynamic maneuverability of a minimally actuated six-legged robot}
+      \field{year}{2010}
+      \field{pages}{869\bibrangedash 876}
+      \range{pages}{8}
+    \endentry
+    \entry{park2014design}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=111b4222d99936ed307ab1aba6b9be5a}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Yong-Lae},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=c393a51d254c06ae245071629715550e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bor-rong},
+           giveni={B\bibinithyphendelim r\bibinitperiod}}}%
+        {{hash=d4d5ab15d4086bfb06290c7788e4c93f}{%
+           family={Pérez-Arancibia},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Néstor\bibnamedelima O},
+           giveni={N\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=91c46b6c47ebc294ab0622eb947bf94b}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5814d5a98b44a4dfd4e2516509689a74}{%
+           family={Stirling},
+           familyi={S\bibinitperiod},
+           given={Leia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dd323fe3fe086d3cf75c848a5c6d31f0}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7203915dbed82c8845fb4733e471207f}{%
+           family={Goldfield},
+           familyi={G\bibinitperiod},
+           given={Eugene\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d649a97dbd0a44bfdfb74b5c5f5da7c0}{%
+           family={Nagpal},
+           familyi={N\bibinitperiod},
+           given={Radhika},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{b76df4cb7996dfea29b4fb28e80771a7}
+      \strng{fullhash}{88ee3af838cd965c4f1779ef19c6260a}
+      \strng{fullhashraw}{88ee3af838cd965c4f1779ef19c6260a}
+      \strng{bibnamehash}{b76df4cb7996dfea29b4fb28e80771a7}
+      \strng{authorbibnamehash}{b76df4cb7996dfea29b4fb28e80771a7}
+      \strng{authornamehash}{b76df4cb7996dfea29b4fb28e80771a7}
+      \strng{authorfullhash}{88ee3af838cd965c4f1779ef19c6260a}
+      \strng{authorfullhashraw}{88ee3af838cd965c4f1779ef19c6260a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinspiration \& biomimetics}
+      \field{number}{1}
+      \field{title}{Design and control of a bio-inspired soft wearable robotic device for ankle--foot rehabilitation}
+      \field{volume}{9}
+      \field{year}{2014}
+      \field{pages}{016007}
+      \range{pages}{1}
+    \endentry
+    \entry{FundacionWiese2017}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f5705d768dbe53b88896f9f6a54de66}{%
+           family={{Fundación Wiese}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fundación Wiese}%
+      }
+      \strng{namehash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{fullhash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{fullhashraw}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{bibnamehash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{authorbibnamehash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{authornamehash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{authorfullhash}{0f5705d768dbe53b88896f9f6a54de66}
+      \strng{authorfullhashraw}{0f5705d768dbe53b88896f9f6a54de66}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{2}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{El uso de la tecnología 3D en pro de la arqueología y el arte}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.fundacionwiese.org/blog/es/uso-la-tecnologia-3d-pro-la-arqueologia-arte/
+      \endverb
+      \verb{url}
+      \verb https://www.fundacionwiese.org/blog/es/uso-la-tecnologia-3d-pro-la-arqueologia-arte/
+      \endverb
+    \endentry
+    \entry{HemerotecaPL2016}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a2ff17bb9b73b746b5a3e062074fa40a}{%
+           family={{Hemeroteca PL}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prensa Libre}%
+      }
+      \strng{namehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{fullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{fullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{bibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorbibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authornamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorfullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorfullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{month}{8}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Kaminaljuyú: el cerro de los muertos}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \endverb
+      \verb{url}
+      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \endverb
+    \endentry
+    \entry{Handley2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1d482679459706171a27629d6a5944e}{%
+           family={Handley},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Gizmodo}%
+      }
+      \strng{namehash}{f1d482679459706171a27629d6a5944e}
+      \strng{fullhash}{f1d482679459706171a27629d6a5944e}
+      \strng{fullhashraw}{f1d482679459706171a27629d6a5944e}
+      \strng{bibnamehash}{f1d482679459706171a27629d6a5944e}
+      \strng{authorbibnamehash}{f1d482679459706171a27629d6a5944e}
+      \strng{authornamehash}{f1d482679459706171a27629d6a5944e}
+      \strng{authorfullhash}{f1d482679459706171a27629d6a5944e}
+      \strng{authorfullhashraw}{f1d482679459706171a27629d6a5944e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{11}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Escáneres 3D revelan secretos de una momia egipcia de 3.000 años}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://es.gizmodo.com/escaneres-3d-revelan-secretos-de-una-momia-egipcia-de-3-000-anos-2000133446
+      \endverb
+      \verb{url}
+      \verb https://es.gizmodo.com/escaneres-3d-revelan-secretos-de-una-momia-egipcia-de-3-000-anos-2000133446
+      \endverb
+    \endentry
+    \entry{Teijeiro2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=aaf17bc16dac8ba0f53e603c230f10dc}{%
+           family={Teijeiro},
+           familyi={T\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Tokio School}%
+      }
+      \strng{namehash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{fullhash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{fullhashraw}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{bibnamehash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{authorbibnamehash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{authornamehash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{authorfullhash}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \strng{authorfullhashraw}{aaf17bc16dac8ba0f53e603c230f10dc}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{month}{5}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{¿Qué es el modelado 3D y cuáles son sus aplicaciones?}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tokioschool.com/formaciones/creacion-modelado-personajes-3d-videojuegos/que-es/
+      \endverb
+      \verb{url}
+      \verb https://www.tokioschool.com/formaciones/creacion-modelado-personajes-3d-videojuegos/que-es/
+      \endverb
+    \endentry
+    \entry{Torres2013}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=51ad8937284360843501e105a21c4039}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de La Rioja}%
+      }
+      \strng{namehash}{51ad8937284360843501e105a21c4039}
+      \strng{fullhash}{51ad8937284360843501e105a21c4039}
+      \strng{fullhashraw}{51ad8937284360843501e105a21c4039}
+      \strng{bibnamehash}{51ad8937284360843501e105a21c4039}
+      \strng{authorbibnamehash}{51ad8937284360843501e105a21c4039}
+      \strng{authornamehash}{51ad8937284360843501e105a21c4039}
+      \strng{authorfullhash}{51ad8937284360843501e105a21c4039}
+      \strng{authorfullhashraw}{51ad8937284360843501e105a21c4039}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{El papel de la realidad aumentada en el ámbito artístico-cultural}
+      \field{type}{phdthesis}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/tesis?codigo=58673
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/tesis?codigo=58673
+      \endverb
+    \endentry
+    \entry{Barroso2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cd8083e536719f9fdb37bb01c9f479f7}{%
+           family={Barroso\bibnamedelima Constante},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dialnet}%
+      }
+      \strng{namehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{fullhash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{fullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{bibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorbibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authornamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorfullhash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorfullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Realidad aumentada en la educación: motivación y aprendizaje significativo}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
+      \endverb
+    \endentry
+    \entry{Sevilla2017}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ced49c409a6a2e0373583e494639a061}{%
+           family={Sevilla},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Politécnica de Madrid}%
+      }
+      \strng{namehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{fullhash}{ced49c409a6a2e0373583e494639a061}
+      \strng{fullhashraw}{ced49c409a6a2e0373583e494639a061}
+      \strng{bibnamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorbibnamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authornamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorfullhash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorfullhashraw}{ced49c409a6a2e0373583e494639a061}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Realidad Aumentada en Educación}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
+      \endverb
+      \verb{url}
+      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
