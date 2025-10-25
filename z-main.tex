@@ -41,10 +41,48 @@
 \usepackage{xfrac}
 \usepackage{float}
 \usepackage{mathtools}
-\usepackage[hypertexnames=false]{hyperref}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+% Forzar ocultar bordes/colores de hipervínculos en todo el documento
+\AtBeginDocument{%
+  \hypersetup{
+    hidelinks,
+    colorlinks=false,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black,
+    filecolor=black,
+    runcolor=black,
+    pdfborder={0 0 0},
+    pdfborderstyle={/S/U/W 0}, % sin subrayado
+    linkbordercolor={1 1 1},
+    urlbordercolor={1 1 1},
+    citebordercolor={1 1 1},
+    filebordercolor={1 1 1},
+    runbordercolor={1 1 1}
+  }
+}
 % \usepackage{bookmark}
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
+\usepackage[titles]{tocloft}
+\renewcommand{\cftfigpresnum}{Figura\ }
+\renewcommand{\cftfigaftersnum}{: }
+\setlength{\cftfignumwidth}{6em} 
+
+\renewcommand{\cfttoctitlefont}{\hfill\normalsize\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftbeforetoctitleskip}{-1.0em}
+\renewcommand{\cftaftertoctitleskip}{0.5em}
+
+\renewcommand{\cftloftitlefont}{\hfill\normalsize\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftbeforeloftitleskip}{-1.0em}
+\renewcommand{\cftafterloftitleskip}{0.5em}
+
+\renewcommand{\cftlottitlefont}{\hfill\normalsize\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftbeforelottitleskip}{-1.0em}
+\renewcommand{\cftafterlottitleskip}{0.5em}
 %\usepackage{csquotes}
 \usepackage{xpatch}
 \usepackage{emptypage}
@@ -114,12 +152,12 @@
 % PORTADA
 % ==============================================================================
 \ifdefined\printver
-    \let\CAPportada\undefined
-\fi 
+	\let\CAPportada\undefined
+\fi
 
 \ifdefined\CAPportada
-    \cleardoublepage\phantomsection
-    % \pdfbookmark{Portada}{toc}
+	\cleardoublepage\phantomsection
+	% \pdfbookmark{Portada}{toc}
 	\newgeometry{left=3cm, bottom=0in, top=1in, right=3cm}
 	\pagecolor{uvg-green}
 	\thispagestyle{empty}
@@ -133,14 +171,14 @@
 	\LARGE \nombreestudiante
 
 	\begin{figure}[b!]
-    	%\makebox[\textwidth]{\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}}
-    	\makebox[\textwidth]{
-    		\begin{overpic}[height=13.25cm]{\imagenportada}
-     		\put(63,0){\includegraphics[height=1.15in]{plantilla/fondologo_grande.png}}  
-  			\put(64.5,2){\includegraphics[height=0.55in]{plantilla/logoUVGblanco.eps}} 
-        	\end{overpic}
-    	}
-    	%\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}
+		%\makebox[\textwidth]{\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}}
+		\makebox[\textwidth]{
+			\begin{overpic}[height=13.25cm]{\imagenportada}
+				\put(63,0){\includegraphics[height=1.15in]{plantilla/fondologo_grande.png}}
+				\put(64.5,2){\includegraphics[height=0.55in]{plantilla/logoUVGblanco.eps}}
+			\end{overpic}
+		}
+		%\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}
 	\end{figure}
 	\restoregeometry
 \fi
@@ -150,8 +188,8 @@
 % ==============================================================================
 \ifdefined\CAPcaratula
 	\newpage
-    \cleardoublepage\phantomsection
-    % \pdfbookmark{Carátula}{toc}
+	\cleardoublepage\phantomsection
+	% \pdfbookmark{Carátula}{toc}
 	\pagecolor{white}
 	\color{black}
 	\setcounter{page}{1}
@@ -163,8 +201,8 @@
 	\end{center}
 	\begin{figure}[h]
 		\begin{center}
-		\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
-		\vspace{0.5in}
+			\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
+			\vspace{0.5in}
 		\end{center}
 	\end{figure}
 	\begin{center}
@@ -177,39 +215,39 @@
 		\vspace{1em}
 		\anoentrega
 	\end{center}
-    
-    \ifdefined\printver	
-	    \blankpage
-	    \blankpage
-	    
-	    \newpage
-	    \cleardoublepage\phantomsection
-	    \pagecolor{white}
-    	\color{black}
-    	\setcounter{page}{1}
-    	\pagenumbering{roman}
-    	\thispagestyle{empty}
-    	\begin{center}
-    		\LARGE UNIVERSIDAD DEL VALLE DE GUATEMALA\\
-    		\LARGE Facultad de \uvgfacultad \\[0.75cm]
-    	\end{center}
-    	\begin{figure}[h]
-    		\begin{center}
-    		\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
-    		\vspace{0.5in}
-    		\end{center}
-    	\end{figure}
-    	\begin{center}
-    		\Large \textbf{\nohyphens{\titulotesis}} \\
-    		%\LARGE \textbf{\titulotesis} \\
-    		\vfill
-    		\Large \nohyphens{Trabajo de graduación presentado por \nombreestudiante \ para optar al grado académico de Licenciado en \uvgcarrera} \\
-    		\vfill
-    		\large Guatemala, \\
-    		\vspace{1em}
-    		\anoentrega
-    	\end{center}
-    \fi
+
+	\ifdefined\printver
+		\blankpage
+		\blankpage
+
+		\newpage
+		\cleardoublepage\phantomsection
+		\pagecolor{white}
+		\color{black}
+		\setcounter{page}{1}
+		\pagenumbering{roman}
+		\thispagestyle{empty}
+		\begin{center}
+			\LARGE UNIVERSIDAD DEL VALLE DE GUATEMALA\\
+			\LARGE Facultad de \uvgfacultad \\[0.75cm]
+		\end{center}
+		\begin{figure}[h]
+			\begin{center}
+				\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
+				\vspace{0.5in}
+			\end{center}
+		\end{figure}
+		\begin{center}
+			\Large \textbf{\nohyphens{\titulotesis}} \\
+			%\LARGE \textbf{\titulotesis} \\
+			\vfill
+			\Large \nohyphens{Trabajo de graduación presentado por \nombreestudiante \ para optar al grado académico de Licenciado en \uvgcarrera} \\
+			\vfill
+			\large Guatemala, \\
+			\vspace{1em}
+			\anoentrega
+		\end{center}
+	\fi
 \fi
 
 % ==============================================================================
@@ -253,24 +291,24 @@
 \ifdefined\CAPprefacio
 	\newpage
 	\cleardoublepage\phantomsection
-    \chapter*{Prefacio}
-    \ifdefined\parpordefecto
-    	\defaultparformat{a-prefacio}
-    \else
-    	\input{a-prefacio}
-    \fi
-    \addcontentsline{toc}{chapter}{Prefacio}
+	\chapter*{Prefacio}
+	\ifdefined\parpordefecto
+		\defaultparformat{a-prefacio}
+	\else
+		\input{a-prefacio}
+	\fi
+	\addcontentsline{toc}{chapter}{Prefacio}
 \fi
 
 % ÍNDICE GENERAL
 % ------------------------------------------------------------------------------
 \ifdefined\CAPindice
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\renewcommand{\contentsname}{Índice}
-    %\phantomsection
-    \pdfbookmark{\contentsname}{toc}
-    %\pdfbookmark{Índice}{toc}
+	%\phantomsection
+	\pdfbookmark{\contentsname}{toc}
+	%\pdfbookmark{Índice}{toc}
 	\tableofcontents
 \fi
 
@@ -278,7 +316,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPfiguras
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\renewcommand{\listfigurename}{Lista de figuras}
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Lista de figuras}
@@ -288,7 +326,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPcuadros
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\renewcommand{\listtablename}{Lista de cuadros}
 	\listoftables
 	\addcontentsline{toc}{chapter}{Lista de cuadros}
@@ -298,7 +336,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPresumen
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\chapter*{Resumen}
 	\ifdefined\parpordefecto
 		\defaultparformat{b-resumen}
@@ -312,7 +350,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPabstract
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\chapter*{Abstract}
 	\ifdefined\parpordefecto
 		\defaultparformat{c-abstract}
@@ -343,10 +381,10 @@
 	\newpage
 	\chapter{Antecedentes}
 	\ifdefined\parpordefecto
-    	\defaultparformat{e-antecedentes}
-    \else
-    	\input{e-antecedentes}
-    \fi  
+		\defaultparformat{e-antecedentes}
+	\else
+		\input{e-antecedentes}
+	\fi
 \fi
 
 % JUSTIFICACIÓN
@@ -379,10 +417,10 @@
 	\newpage
 	\chapter{Alcance}
 	\ifdefined\parpordefecto
-    	\defaultparformat{h-alcance}
-    \else
-    	\input{h-alcance}
-    \fi 
+		\defaultparformat{h-alcance}
+	\else
+		\input{h-alcance}
+	\fi
 \fi
 
 % MARCO TEÓRICO
@@ -449,9 +487,9 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPbibliografia
 	\newpage
-    \cleardoublepage\phantomsection
+	\cleardoublepage\phantomsection
 	\chapter{\bibname}
-    \printbibliography[heading=none]
+	\printbibliography[heading=none]
 \fi
 
 % ANEXOS

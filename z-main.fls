@@ -148,6 +148,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -343,17 +345,10 @@ INPUT ./plantilla/escudoUVGnegro-eps-converted-to.pdf
 INPUT ./plantilla/escudoUVGnegro-eps-converted-to.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecss1440.tfm
-INPUT ./a-prefacio.tex
-INPUT ./a-prefacio.tex
-INPUT ./a-prefacio.tex
-INPUT ./a-prefacio.tex
-INPUT a-prefacio.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm
 INPUT ./z-main.toc
 INPUT ./z-main.toc
 INPUT z-main.toc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecxc1095.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -377,6 +372,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecxc1095.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm
 OUTPUT z-main.toc
 INPUT ./z-main.lof
 INPUT ./z-main.lof

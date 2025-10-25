@@ -22,6 +22,46 @@
 *.bbl
 *.blg
 
+# ------------------------------------------------------------------------------
+# LaTeX (comprehensive) — aux/build artifacts (keep .tex/.bib/.png tracked)
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)*
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdy
+*.lol
+*.thm
+*.ptc
+
+# Files occasionally produced by some editors/compilers
+*~
+*.swp
+*.swo
+
+# Temporary/erroneous builds
+*-SAVE-ERROR
+
 # Log created by Adobe Reader
 C:\\nppdf32Log\\debuglog.txt
 
