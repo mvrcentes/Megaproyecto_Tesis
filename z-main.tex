@@ -65,8 +65,8 @@
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
 \usepackage[titles]{tocloft}
-\renewcommand{\cftfigpresnum}{Figura\ }
-\renewcommand{\cftfigaftersnum}{: }
+\renewcommand{\cftfigpresnum}{Figura~}
+\renewcommand{\cftfigaftersnum}{:}
 \setlength{\cftfignumwidth}{6em} 
 
 \renewcommand{\cfttoctitlefont}{\hfill\normalsize\bfseries}
@@ -99,9 +99,8 @@
 \usepackage{chngcntr}
 
 \ifdefined\CAPglosario
-	%\usepackage[toc]{glossaries}
-	\usepackage[numberedsection]{glossaries}
-	\makeglossaries
+	\usepackage[numberedsection,toc]{glossaries}
+	\makenoidxglossaries
     \input{p-glosario}
 \fi
 
@@ -459,27 +458,15 @@
 	\fi
 \fi
 
-% ANÁLISIS DE RESULTADOS
+% DISCUSIÓN DE RESULTADOS
 % ------------------------------------------------------------------------------
 \ifdefined\CAPanalisisderesultado
 	\newpage
-	\chapter{Análisis de resultados}
-	\ifdefined\parpordefecto
-		\defaultparformat{l-analisis_de_resultados}
-	\else
-		\input{l-analisis_de_resultados}
-	\fi
-\fi
-
-% DISCUSIÓN DE RESULTADOS
-% ------------------------------------------------------------------------------
-\ifdefined\CAPdiscusionderesultado
-	\newpage
 	\chapter{Discusión de resultados}
 	\ifdefined\parpordefecto
-		\defaultparformat{m-discusion_de_resultados}
+		\defaultparformat{l-discusion}
 	\else
-		\input{m-discusion_de_resultados}
+		\input{l-discusion}
 	\fi
 \fi
 
@@ -508,7 +495,9 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPglosario
 	\newpage
-	\printglossary
+	% Imprime el glosario con su propio encabezado (evita duplicar \chapter)
+	\glsaddall
+	\printnoidxglossary[title={Glosario}]
 \fi
 
 \end{document}

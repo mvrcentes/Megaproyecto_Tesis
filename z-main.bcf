@@ -2374,16 +2374,20 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">Kwei2019</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">hoover2010bio</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">park2014design</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">FundacionWiese2017</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">HemerotecaPL2016</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Handley2024</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Teijeiro2023</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Torres2013</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Torres2013</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Barroso2022</bcf:citekey>
-    <bcf:citekey order="10" intorder="2">Sevilla2017</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Artec2015</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Artec2015</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Skublewska2022</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Skublewska2022</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">CalbendMediaND</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Izquierdo2020</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">FundacionWiese2017</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">HemerotecaPL2016</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Handley2024</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Teijeiro2023</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Torres2013</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Torres2013</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Barroso2022</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">Sevilla2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
