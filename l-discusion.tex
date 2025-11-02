@@ -9,7 +9,7 @@ Este capítulo discute el conjunto de modelos desarrollados (Montículos 3, 7, 1
 
 Se completó el modelado tridimensional de los seis montículos propuestos siguiendo un procedimiento uniforme. El flujo por etapas (malla $\rightarrow$ sólido $\rightarrow$ texturizado) permitió validar progresivamente la calidad del resultado:
 \begin{itemize}
-    \item \textbf{Geometría base (wireframe).} Esta vista facilitó la inspección de proporciones, alineación de escalones, continuidad de taludes y simetrías. Fue útil para detectar y corregir aristas/caras innecesarias, evitar geometría y asegurar una topología limpia.
+    \item \textbf{Geometría base (\gls{Wireframe}).} Esta vista facilitó la inspección de proporciones, alineación de escalones, continuidad de taludes y simetrías. Fue útil para detectar y corregir aristas/caras innecesarias, evitar geometría y asegurar una topología limpia.
     \item \textbf{Volumetría (sólido).} La visualización sin materiales aisló la forma general de cada montículo y ayudó a comprobar la relación entre plataformas, escalinatas y superestructuras, así como la pendiente y los cambios de nivel.
     \item \textbf{Aplicación de materiales (texturizado).} En esta fase se verificó la correspondencia entre las texturas asignadas y los materiales originales documentados, cuidando la orientación y escala para obtener una representación realista.
 
@@ -37,7 +37,7 @@ El conjunto mantiene una lectura coherente con los rasgos registrados para Kamin
 
 \subsection{Comparación y síntesis del conjunto}
 
-En conjunto, los seis modelos mantienen una coherencia formal y visual que refleja adecuadamente las características arquitectónicas de Kaminaljuyú. Todos fueron elaborados mediante el mismo flujo de trabajo, lo que permitió conservar la proporción entre plataformas, taludes y escalinatas, así como una topología limpia y eficiente gracias a la eliminación de caras no visibles. El resultado evidencia que el pipeline es reproducible y puede aplicarse a futuros montículos o variantes sin comprometer la consistencia general.
+En conjunto, los seis modelos mantienen una coherencia formal y visual que refleja adecuadamente las características arquitectónicas de Kaminaljuyú. Todos fueron elaborados mediante el mismo flujo de trabajo, lo que permitió conservar la proporción entre plataformas, taludes y escalinatas, así como una topología limpia y eficiente gracias a la eliminación de caras no visibles. El resultado evidencia que el \gls{pipeline} es reproducible y puede aplicarse a futuros montículos o variantes sin comprometer la consistencia general.
 
 En términos de balance entre fidelidad y rendimiento, la simplificación geométrica se mantuvo dentro de límites adecuados para conservar los rasgos constructivos esenciales, garantizando al mismo tiempo un desempeño óptimo para su uso en entornos de realidad aumentada. Asimismo, la uniformidad de materiales y texturas, con excepción del Montículo 14, que requirió ajustes particulares, favorece la lectura visual del conjunto como parte de un mismo sitio arqueológico.
 
@@ -54,10 +54,22 @@ Finalmente, la representación tridimensional obtenida contribuye a propósitos 
 \subsection{Trabajo futuro}
 
 \begin{itemize}
-    \item \textbf{Afinar materiales PBR.} Incorporar mapas de normales y oclusión ambiental derivados de texturas reales o fotogrametría puntual para detalles finos.
+    \item \textbf{Afinar materiales \gls{PBR}.} Incorporar mapas de normales y oclusión ambiental derivados de texturas reales o fotogrametría puntual para detalles finos.
     \item \textbf{Ampliación del corpus.} Extender el pipeline a otros montículos o variantes históricas y documentar discrepancias para análisis comparativo.
 \end{itemize}
 
 \section{Discusión de resultados}
 
-Ver si se discute solamente lo de la encuesta o también lo de los resultados del modelado.
+La presente sección analiza los resultados obtenidos en relación con los objetivos planteados, con el propósito de valorar el cumplimiento del desarrollo de los modelos tridimensionales, su calidad visual y su aplicabilidad en entornos de realidad aumentada.
+
+La integración de los modelos tridimensionales en la aplicación de realidad aumentada permitió evaluar su desempeño visual y su aporte a la comprensión del sitio arqueológico. Las pruebas de funcionamiento se realizaron dentro del campus de la Universidad del Valle de Guatemala, en el área de la plaza Paiz y zonas de parqueo, ante las limitaciones logísticas para realizar pruebas directamente en el parque Kaminaljuyú. Aun así, estas pruebas permitieron comprobar la correcta visualización, escala y orientación de los modelos en un entorno abierto similar en extensión y luminosidad al sitio real. De forma complementaria, se reconoce que el espacio del parque Kaminaljuyú, al ser un entorno sin edificaciones y con condiciones de iluminación natural estables, resultaría más favorable para la navegación y apreciación de los modelos, lo que refuerza el potencial de la RA como medio para acercar al público a una interpretación visual del pasado prehispánico sin alterar el entorno físico.
+
+Los resultados de la encuesta aplicada reflejan una valoración positiva general de los modelos. Los indicadores con calificaciones más altas corresponden al \textbf{valor educativo}, la \textbf{coherencia visual del conjunto} y la \textbf{claridad geométrica}, lo que confirma que la representación digital logra comunicar con eficacia la forma y disposición original de las estructuras. Los participantes destacaron la facilidad con la que podían distinguir elementos constructivos como las escalinatas y plataformas, lo cual se traduce en una buena legibilidad visual dentro del entorno aumentado.
+
+En cuanto a la \textbf{credibilidad arqueológica}, la mayoría de los evaluadores otorgó puntuaciones altas. Señalaron que las proporciones y el estilo constructivo de los modelos resultan creíbles respecto a las referencias arqueológicas disponibles. Esto sugiere que la colaboración con el área de Arqueología fue fundamental para mantener la fidelidad formal sin sacrificar rendimiento ni claridad visual. Asimismo, la \textbf{coherencia de estilo y materiales} entre los seis montículos fue valorada como satisfactoria, lo que indica que el flujo de trabajo empleado garantizó uniformidad estética dentro del entorno virtual.
+
+Si bien la evaluación general fue positiva, se identificaron oportunidades de mejora relacionadas principalmente con la optimización de la visualización bajo distintas condiciones de iluminación. En algunos casos, las texturas podrían beneficiarse del uso de materiales basados en propiedades físicas (\gls{PBR}), que permitirían una mejor respuesta a la iluminación natural y aumentarían la sensación de realismo. No se registraron inconvenientes de escala ni de visualización significativa durante las pruebas, lo que confirma la estabilidad de los modelos en el entorno de RA implementado para dispositivos Android.
+
+En términos de \textbf{valor educativo}, los resultados confirman que la aplicación logra su propósito principal: ofrecer una aproximación visual a cómo pudieron verse originalmente los montículos. La posibilidad de recorrer el parque y observar la reconstrucción tridimensional sobre el terreno incrementa la comprensión espacial del sitio y promueve un aprendizaje activo basado en la exploración. Este efecto educativo se potencia gracias a la precisión de los modelos, que sirven como un puente entre la evidencia arqueológica y la interpretación visual accesible para todo público.
+
+En síntesis, la discusión evidencia que el trabajo de modelado y texturizado cumplió con los objetivos de fidelidad, coherencia y aplicabilidad en RA. Las calificaciones obtenidas en la encuesta respaldan la efectividad del pipeline empleado, tanto en términos de calidad técnica como de valor divulgativo. Los hallazgos sugieren que la combinación de modelado \gls{3d} y realidad aumentada constituye una herramienta eficaz para la preservación y comunicación del patrimonio arqueológico, siempre que se mantenga el equilibrio entre precisión científica y claridad visual para el usuario final. En conjunto, los resultados confirman el logro del objetivo general y de los tres objetivos específicos, validando el proceso metodológico implementado y consolidando la eficacia del modelado tridimensional y la realidad aumentada como herramientas de preservación digital y divulgación arqueológica.

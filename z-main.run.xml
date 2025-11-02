@@ -82,7 +82,7 @@
       <file>z-main.bcf</file>
     </requires>
     <requires type="editable">
-      <file>n-bibliografia.bib</file>
+      <file>o-bibliografia.bib</file>
     </requires>
   </external>
 </requests>

@@ -92,7 +92,7 @@
 \ifdefined\usarAPA 
     \usepackage[backend=biber, style=apa]{biblatex}
 \fi
-\addbibresource{n-bibliografia.bib}
+\addbibresource{o-bibliografia.bib}
 
 \usepackage[percent]{overpic}
 
@@ -101,7 +101,7 @@
 \ifdefined\CAPglosario
 	\usepackage[numberedsection,toc]{glossaries}
 	\makenoidxglossaries
-    \input{p-glosario}
+    \input{q-glosario}
 \fi
 
 % ==============================================================================
@@ -470,6 +470,30 @@
 	\fi
 \fi
 
+% CONCLUSIONES
+% ------------------------------------------------------------------------------
+\ifdefined\CAPconclusiones
+	\newpage
+	\chapter{Conclusiones}
+	\ifdefined\parpordefecto
+		\defaultparformat{m-conclusiones}
+	\else
+		\input{m-conclusiones}
+	\fi
+\fi
+
+% RECOMENDACIONES
+% ------------------------------------------------------------------------------
+\ifdefined\CAPrecomendaciones
+	\newpage
+	\chapter{Recomendaciones}
+	\ifdefined\parpordefecto
+		\defaultparformat{n-recomendaciones}
+	\else
+		\input{n-recomendaciones}
+	\fi
+\fi
+
 % BIBLIOGRAFÍA
 % ------------------------------------------------------------------------------
 \ifdefined\CAPbibliografia
@@ -485,9 +509,9 @@
 	\newpage
 	\chapter{Anexos}
 	\ifdefined\parpordefecto
-		\defaultparformat{o-anexos}
+		\defaultparformat{p-anexos}
 	\else
-		\input{o-anexos}
+		\input{p-anexos}
 	\fi
 \fi
 

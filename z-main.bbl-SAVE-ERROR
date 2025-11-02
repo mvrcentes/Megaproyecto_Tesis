@@ -55,120 +55,167 @@
       \verb https://aprende.guatemala.com/cultura-guatemalteca/actualidad/horarios-precios-parque-arqueologico-kaminaljuyu/
       \endverb
     \endentry
-    \entry{hoover2010bio}{inproceedings}{}{}
-      \name{author}{5}{}{%
-        {{hash=d0d9e63f547a8b96ca1dcc8db44cd721}{%
-           family={Hoover},
-           familyi={H\bibinitperiod},
-           given={Aaron\bibnamedelima M},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=196f602b57d80f69a4642ea05e327c5e}{%
-           family={Burden},
-           familyi={B\bibinitperiod},
-           given={Samuel},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d08b7a7bde2f73e205b49e83117d2f31}{%
-           family={Fu},
-           familyi={F\bibinitperiod},
-           given={Xiao-Yu},
-           giveni={X\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=d756b35e7b530d260e5a0807d1953354}{%
-           family={Sastry},
-           familyi={S\bibinitperiod},
-           given={S\bibnamedelima Shankar},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=754fce70cc426f9abfe3308640492e6a}{%
-           family={Fearing},
-           familyi={F\bibinitperiod},
-           given={Ronald\bibnamedelima S},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+    \entry{Artec2015}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=07c215d5ad76248b4e209b3e1567c93f}{%
+           family={{Artec 3D}},
+           familyi={A\bibinitperiod}}}%
       }
-      \list{organization}{1}{%
-        {IEEE}%
+      \list{publisher}{1}{%
+        {Artec 3D}%
       }
-      \strng{namehash}{11573c3ea48f6e87892aa07054d7d420}
-      \strng{fullhash}{a54f882dc1689cf7e7fc060fd8344526}
-      \strng{fullhashraw}{a54f882dc1689cf7e7fc060fd8344526}
-      \strng{bibnamehash}{a54f882dc1689cf7e7fc060fd8344526}
-      \strng{authorbibnamehash}{a54f882dc1689cf7e7fc060fd8344526}
-      \strng{authornamehash}{11573c3ea48f6e87892aa07054d7d420}
-      \strng{authorfullhash}{a54f882dc1689cf7e7fc060fd8344526}
-      \strng{authorfullhashraw}{a54f882dc1689cf7e7fc060fd8344526}
+      \strng{namehash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{fullhash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{fullhashraw}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{bibnamehash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{authorbibnamehash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{authornamehash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{authorfullhash}{07c215d5ad76248b4e209b3e1567c93f}
+      \strng{authorfullhashraw}{07c215d5ad76248b4e209b3e1567c93f}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Biomedical Robotics and Biomechatronics (BioRob), 2010 3rd IEEE RAS and EMBS International Conference on}
-      \field{title}{Bio-inspired design and dynamic maneuverability of a minimally actuated six-legged robot}
-      \field{year}{2010}
-      \field{pages}{869\bibrangedash 876}
-      \range{pages}{8}
+      \field{day}{5}
+      \field{month}{2}
+      \field{note}{Consultado el 20 de octubre de 2025}
+      \field{title}{El Museo Británico (British Museum) captura en 3D su colección de relieves asirios}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.artec3d.com/es/news/el-museo-britanico-british-museum-captura-en-3d-su-coleccion-de
+      \endverb
+      \verb{url}
+      \verb https://www.artec3d.com/es/news/el-museo-britanico-british-museum-captura-en-3d-su-coleccion-de
+      \endverb
     \endentry
-    \entry{park2014design}{article}{}{}
-      \name{author}{8}{}{%
-        {{hash=111b4222d99936ed307ab1aba6b9be5a}{%
-           family={Park},
+    \entry{Skublewska2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=82bbc0cb86239d61f6900dc0f1b96c6f}{%
+           family={Skublewska-Paszkowska},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e62153b77abd6fefcf5812ec11535b0}{%
+           family={Milosz},
+           familyi={M\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=53e9395a423efb8de2a3e5c0902eed5f}{%
+           family={Powroznik},
            familyi={P\bibinitperiod},
-           given={Yong-Lae},
-           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
-        {{hash=c393a51d254c06ae245071629715550e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Bor-rong},
-           giveni={B\bibinithyphendelim r\bibinitperiod}}}%
-        {{hash=d4d5ab15d4086bfb06290c7788e4c93f}{%
-           family={Pérez-Arancibia},
-           familyi={P\bibinithyphendelim A\bibinitperiod},
-           given={Néstor\bibnamedelima O},
-           giveni={N\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
-        {{hash=91c46b6c47ebc294ab0622eb947bf94b}{%
-           family={Young},
-           familyi={Y\bibinitperiod},
-           given={Diana},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5814d5a98b44a4dfd4e2516509689a74}{%
-           family={Stirling},
-           familyi={S\bibinitperiod},
-           given={Leia},
-           giveni={L\bibinitperiod}}}%
-        {{hash=dd323fe3fe086d3cf75c848a5c6d31f0}{%
-           family={Wood},
-           familyi={W\bibinitperiod},
-           given={Robert\bibnamedelima J},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=7203915dbed82c8845fb4733e471207f}{%
-           family={Goldfield},
-           familyi={G\bibinitperiod},
-           given={Eugene\bibnamedelima C},
-           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=d649a97dbd0a44bfdfb74b5c5f5da7c0}{%
-           family={Nagpal},
-           familyi={N\bibinitperiod},
-           given={Radhika},
-           giveni={R\bibinitperiod}}}%
+           given={Pawel},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2bd7f96815769aafd93c9bca58a6b977}{%
+           family={Lukasik},
+           familyi={L\bibinitperiod},
+           given={Edyta},
+           giveni={E\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {IOP Publishing}%
+        {Springer Nature}%
       }
-      \strng{namehash}{b76df4cb7996dfea29b4fb28e80771a7}
-      \strng{fullhash}{88ee3af838cd965c4f1779ef19c6260a}
-      \strng{fullhashraw}{88ee3af838cd965c4f1779ef19c6260a}
-      \strng{bibnamehash}{b76df4cb7996dfea29b4fb28e80771a7}
-      \strng{authorbibnamehash}{b76df4cb7996dfea29b4fb28e80771a7}
-      \strng{authornamehash}{b76df4cb7996dfea29b4fb28e80771a7}
-      \strng{authorfullhash}{88ee3af838cd965c4f1779ef19c6260a}
-      \strng{authorfullhashraw}{88ee3af838cd965c4f1779ef19c6260a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \strng{namehash}{823c63e2f3b53da48bc5766ba4d89126}
+      \strng{fullhash}{6a82a78b1d264e1953ce0cf95181b140}
+      \strng{fullhashraw}{6a82a78b1d264e1953ce0cf95181b140}
+      \strng{bibnamehash}{6a82a78b1d264e1953ce0cf95181b140}
+      \strng{authorbibnamehash}{6a82a78b1d264e1953ce0cf95181b140}
+      \strng{authornamehash}{823c63e2f3b53da48bc5766ba4d89126}
+      \strng{authorfullhash}{6a82a78b1d264e1953ce0cf95181b140}
+      \strng{authorfullhashraw}{6a82a78b1d264e1953ce0cf95181b140}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Bioinspiration \& biomimetics}
+      \field{journaltitle}{Heritage Science}
+      \field{note}{Consultado el 28 de octubre de 2025}
       \field{number}{1}
-      \field{title}{Design and control of a bio-inspired soft wearable robotic device for ankle--foot rehabilitation}
-      \field{volume}{9}
-      \field{year}{2014}
-      \field{pages}{016007}
+      \field{title}{3D technologies for intangible cultural heritage preservation—literature review for selected databases}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{3}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s40494-021-00633-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s40494-021-00633-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s40494-021-00633-x
+      \endverb
+    \endentry
+    \entry{CalbendMediaND}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=41f97531f3c02a47f5f9a5f6e206fd14}{%
+           family={{Calbend Media}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Calbend Media}%
+      }
+      \strng{namehash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{fullhash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{fullhashraw}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{bibnamehash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{authorbibnamehash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{authornamehash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{authorfullhash}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \strng{authorfullhashraw}{41f97531f3c02a47f5f9a5f6e206fd14}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 30 de octubre de 2025}
+      \field{title}{La Importancia de la Tecnología 3D y los Recorridos Virtuales en la Educación}
+      \field{year}{s.f.}
+      \verb{urlraw}
+      \verb https://calbendmedia.com/la-importancia-de-la-tecnologia-3d-y-los-recorridos-virtuales-en-la-educacion/
+      \endverb
+      \verb{url}
+      \verb https://calbendmedia.com/la-importancia-de-la-tecnologia-3d-y-los-recorridos-virtuales-en-la-educacion/
+      \endverb
+    \endentry
+    \entry{Izquierdo2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c5c109acfe466fade4029d50abc62358}{%
+           family={Izquierdo\bibnamedelima Pardo},
+           familyi={I\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={José\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ca97d726dc0db971fe0dfb37cabc158c}{%
+           family={Pardo\bibnamedelima Gómez},
+           familyi={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={María\bibnamedelima Elena},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=bc7d54269333ef9a72d7071f5ffa3162}{%
+           family={Izquierdo\bibnamedelima Lao},
+           familyi={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={José\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Centro Provincial de Ciencias Médicas}%
+      }
+      \strng{namehash}{875b5a0611b644af5a485773340b2f16}
+      \strng{fullhash}{90bf76125e2672c1fb64b6d0d7be7573}
+      \strng{fullhashraw}{90bf76125e2672c1fb64b6d0d7be7573}
+      \strng{bibnamehash}{90bf76125e2672c1fb64b6d0d7be7573}
+      \strng{authorbibnamehash}{90bf76125e2672c1fb64b6d0d7be7573}
+      \strng{authornamehash}{875b5a0611b644af5a485773340b2f16}
+      \strng{authorfullhash}{90bf76125e2672c1fb64b6d0d7be7573}
+      \strng{authorfullhashraw}{90bf76125e2672c1fb64b6d0d7be7573}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MEDISAN}
+      \field{number}{5}
+      \field{title}{Modelos digitales 3D en el proceso de enseñanza-aprendizaje de las ciencias médicas}
+      \field{volume}{24}
+      \field{year}{2020}
+      \field{pages}{1035\bibrangedash 1048}
+      \range{pages}{14}
     \endentry
     \entry{FundacionWiese2017}{online}{}{}
       \name{author}{1}{}{%
@@ -187,8 +234,8 @@
       \strng{authornamehash}{0f5705d768dbe53b88896f9f6a54de66}
       \strng{authorfullhash}{0f5705d768dbe53b88896f9f6a54de66}
       \strng{authorfullhashraw}{0f5705d768dbe53b88896f9f6a54de66}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{4}
@@ -221,8 +268,8 @@
       \strng{authornamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
       \strng{authorfullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
       \strng{authorfullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -257,8 +304,8 @@
       \strng{authornamehash}{f1d482679459706171a27629d6a5944e}
       \strng{authorfullhash}{f1d482679459706171a27629d6a5944e}
       \strng{authorfullhashraw}{f1d482679459706171a27629d6a5944e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -293,8 +340,8 @@
       \strng{authornamehash}{aaf17bc16dac8ba0f53e603c230f10dc}
       \strng{authorfullhash}{aaf17bc16dac8ba0f53e603c230f10dc}
       \strng{authorfullhashraw}{aaf17bc16dac8ba0f53e603c230f10dc}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{10}
@@ -329,8 +376,8 @@
       \strng{authornamehash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhashraw}{51ad8937284360843501e105a21c4039}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 18 de agosto de 2025}
