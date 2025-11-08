@@ -89,6 +89,40 @@
       \verb https://www.artec3d.com/es/news/el-museo-britanico-british-museum-captura-en-3d-su-coleccion-de
       \endverb
     \endentry
+    \entry{MCD2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f4faa748026b36a82b3df39b45c21a2a}{%
+           family={{Ministerio de Cultura y Deportes de Guatemala}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ministerio de Cultura y Deportes de Guatemala}%
+      }
+      \strng{namehash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{fullhash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{fullhashraw}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{bibnamehash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{authorbibnamehash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{authornamehash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{authorfullhash}{f4faa748026b36a82b3df39b45c21a2a}
+      \strng{authorfullhashraw}{f4faa748026b36a82b3df39b45c21a2a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{6}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Impulsan digitalización de bienes culturales de Guatemala}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://noticias.mcd.gob.gt/2024/06/25/impulsan-digitalizacion-de-bienes-culturales-de-guatemala/
+      \endverb
+      \verb{url}
+      \verb https://noticias.mcd.gob.gt/2024/06/25/impulsan-digitalizacion-de-bienes-culturales-de-guatemala/
+      \endverb
+    \endentry
     \entry{Skublewska2022}{article}{}{}
       \name{author}{4}{}{%
         {{hash=82bbc0cb86239d61f6900dc0f1b96c6f}{%
@@ -123,8 +157,8 @@
       \strng{authornamehash}{823c63e2f3b53da48bc5766ba4d89126}
       \strng{authorfullhash}{6a82a78b1d264e1953ce0cf95181b140}
       \strng{authorfullhashraw}{6a82a78b1d264e1953ce0cf95181b140}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Heritage Science}
@@ -162,8 +196,8 @@
       \strng{authornamehash}{41f97531f3c02a47f5f9a5f6e206fd14}
       \strng{authorfullhash}{41f97531f3c02a47f5f9a5f6e206fd14}
       \strng{authorfullhashraw}{41f97531f3c02a47f5f9a5f6e206fd14}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 30 de octubre de 2025}
@@ -205,8 +239,8 @@
       \strng{authornamehash}{875b5a0611b644af5a485773340b2f16}
       \strng{authorfullhash}{90bf76125e2672c1fb64b6d0d7be7573}
       \strng{authorfullhashraw}{90bf76125e2672c1fb64b6d0d7be7573}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEDISAN}
@@ -234,8 +268,8 @@
       \strng{authornamehash}{0f5705d768dbe53b88896f9f6a54de66}
       \strng{authorfullhash}{0f5705d768dbe53b88896f9f6a54de66}
       \strng{authorfullhashraw}{0f5705d768dbe53b88896f9f6a54de66}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{4}
@@ -268,8 +302,8 @@
       \strng{authornamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
       \strng{authorfullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
       \strng{authorfullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -357,6 +391,563 @@
       \verb https://www.tokioschool.com/formaciones/creacion-modelado-personajes-3d-videojuegos/que-es/
       \endverb
     \endentry
+    \entry{Macho2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c3ae94d08246634e0671418d421ed0df}{%
+           family={Macho\bibnamedelima Stadler},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad del País Vasco}%
+      }
+      \strng{namehash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{fullhash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{fullhashraw}{c3ae94d08246634e0671418d421ed0df}
+      \strng{bibnamehash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{authorbibnamehash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{authornamehash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{authorfullhash}{c3ae94d08246634e0671418d421ed0df}
+      \strng{authorfullhashraw}{c3ae94d08246634e0671418d421ed0df}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIGMA}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{number}{20}
+      \field{title}{¿Qué es la Topología?}
+      \field{year}{2002}
+      \field{pages}{63\bibrangedash 77}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://www.ehu.eus/~mtwmastm/sigma20.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ehu.eus/~mtwmastm/sigma20.pdf
+      \endverb
+    \endentry
+    \entry{Linkedin2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=21890c883598abe6fff73e5ee301cfa0}{%
+           family={{LinkedIn Contributors}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LinkedIn}%
+      }
+      \strng{namehash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{fullhash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{fullhashraw}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{bibnamehash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{authorbibnamehash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{authornamehash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{authorfullhash}{21890c883598abe6fff73e5ee301cfa0}
+      \strng{authorfullhashraw}{21890c883598abe6fff73e5ee301cfa0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{¿Cómo crear modelos 3D con una topología óptima?}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/advice/0/how-can-you-create-3d-models-optimal-topology-ceagc
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/advice/0/how-can-you-create-3d-models-optimal-topology-ceagc
+      \endverb
+    \endentry
+    \entry{BlenderManual293Normals}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=95d7d130906ab9ff56014391557d8b5e}{%
+           family={{Blender Online Community}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Blender Foundation}%
+      }
+      \strng{namehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{bibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorbibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authornamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Normales — Blender 2.93 Manual (ES)}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.blender.org/manual/es/2.93/modeling/meshes/editing/mesh/normals.html
+      \endverb
+      \verb{url}
+      \verb https://docs.blender.org/manual/es/2.93/modeling/meshes/editing/mesh/normals.html
+      \endverb
+    \endentry
+    \entry{BlenderManual34Shading}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=95d7d130906ab9ff56014391557d8b5e}{%
+           family={{Blender Online Community}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Blender Foundation}%
+      }
+      \strng{namehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{bibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorbibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authornamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Sombreado de la Vista — Blender 3.4 Manual (ES)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://docs.blender.org/manual/es/3.4/editors/3dview/display/shading.html
+      \endverb
+      \verb{url}
+      \verb https://docs.blender.org/manual/es/3.4/editors/3dview/display/shading.html
+      \endverb
+    \endentry
+    \entry{BlenderManual291UV}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=95d7d130906ab9ff56014391557d8b5e}{%
+           family={{Blender Online Community}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Blender Foundation}%
+      }
+      \strng{namehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{fullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{bibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorbibnamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authornamehash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhash}{95d7d130906ab9ff56014391557d8b5e}
+      \strng{authorfullhashraw}{95d7d130906ab9ff56014391557d8b5e}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Introducción al Editor UV — Blender 2.91 Manual (ES)}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://docs.blender.org/manual/es/2.91/editors/uv/introduction.html
+      \endverb
+      \verb{url}
+      \verb https://docs.blender.org/manual/es/2.91/editors/uv/introduction.html
+      \endverb
+    \endentry
+    \entry{AdobePBR}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=71f698950c9cdadc3d19bb7411177a78}{%
+           family={{Adobe}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Adobe Inc.}%
+      }
+      \strng{namehash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{fullhash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{fullhashraw}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{bibnamehash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{authorbibnamehash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{authornamehash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{authorfullhash}{71f698950c9cdadc3d19bb7411177a78}
+      \strng{authorfullhashraw}{71f698950c9cdadc3d19bb7411177a78}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{En qué consiste la representación basada en la física (PBR)}
+      \field{year}{s.f.}
+      \verb{urlraw}
+      \verb https://www.adobe.com/gt/products/substance3d/discover/pbr.html
+      \endverb
+      \verb{url}
+      \verb https://www.adobe.com/gt/products/substance3d/discover/pbr.html
+      \endverb
+    \endentry
+    \entry{AutodeskRetopo}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=983ea436405fa9ab72f858e1f1b874a7}{%
+           family={{Autodesk}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Autodesk, Inc.}%
+      }
+      \strng{namehash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{fullhash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{fullhashraw}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{bibnamehash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{authorbibnamehash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{authornamehash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{authorfullhash}{983ea436405fa9ab72f858e1f1b874a7}
+      \strng{authorfullhashraw}{983ea436405fa9ab72f858e1f1b874a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{What is retopology?}
+      \field{year}{s.f.}
+      \verb{urlraw}
+      \verb https://www.autodesk.com/solutions/retopology
+      \endverb
+      \verb{url}
+      \verb https://www.autodesk.com/solutions/retopology
+      \endverb
+    \endentry
+    \entry{GoogleARCorePerf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6bc28252c14133d21331dc54856c1797}{%
+           family={{Google Developers}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Google}%
+      }
+      \strng{namehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \strng{bibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorbibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authornamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{10}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Performance considerations | ARCore}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developers.google.com/ar/develop/performance
+      \endverb
+      \verb{url}
+      \verb https://developers.google.com/ar/develop/performance
+      \endverb
+    \endentry
+    \entry{UnityDrawCalls2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f56ad8f8e05fcad24de3fcf878fb50b}{%
+           family={{Unity Technologies}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Unity}%
+      }
+      \strng{namehash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{fullhash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{fullhashraw}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{bibnamehash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{authorbibnamehash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{authornamehash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{authorfullhash}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \strng{authorfullhashraw}{3f56ad8f8e05fcad24de3fcf878fb50b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Optimizing draw calls}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://docs.unity3d.com/2022.3/Documentation/Manual/optimizing-draw-calls.html
+      \endverb
+      \verb{url}
+      \verb https://docs.unity3d.com/2022.3/Documentation/Manual/optimizing-draw-calls.html
+      \endverb
+    \endentry
+    \entry{KhronosGLTFSpec}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=364378d45b69f33fd50d5d62ae518626}{%
+           family={{Khronos Group}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Khronos Group}%
+      }
+      \strng{namehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{fullhash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{fullhashraw}{364378d45b69f33fd50d5d62ae518626}
+      \strng{bibnamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorbibnamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authornamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorfullhash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorfullhashraw}{364378d45b69f33fd50d5d62ae518626}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{glTF 2.0 Specification}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
+      \endverb
+      \verb{url}
+      \verb https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
+      \endverb
+    \endentry
+    \entry{KhronosKTX2Overview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=364378d45b69f33fd50d5d62ae518626}{%
+           family={{Khronos Group}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Khronos Group}%
+      }
+      \strng{namehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{fullhash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{fullhashraw}{364378d45b69f33fd50d5d62ae518626}
+      \strng{bibnamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorbibnamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authornamehash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorfullhash}{364378d45b69f33fd50d5d62ae518626}
+      \strng{authorfullhashraw}{364378d45b69f33fd50d5d62ae518626}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Universal GPU Compressed Textures for glTF using KTX 2.0}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.khronos.org/assets/uploads/apis/KTX-2.0-Launch-Overview-Apr21_.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.khronos.org/assets/uploads/apis/KTX-2.0-Launch-Overview-Apr21_.pdf
+      \endverb
+    \endentry
+    \entry{AppleUSDCreate}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=63f0030f4ed434a49b87634fdef8f1bd}{%
+           family={{Apple Developer Documentation}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apple Inc.}%
+      }
+      \strng{namehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{fullhash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{fullhashraw}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{bibnamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorbibnamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authornamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorfullhash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorfullhashraw}{63f0030f4ed434a49b87634fdef8f1bd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Creating USD files for Apple devices}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://developer.apple.com/documentation/usd/creating-usd-files-for-apple-devices
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/documentation/usd/creating-usd-files-for-apple-devices
+      \endverb
+    \endentry
+    \entry{GoogleSceneViewer}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6bc28252c14133d21331dc54856c1797}{%
+           family={{Google Developers}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Google}%
+      }
+      \strng{namehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \strng{bibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorbibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authornamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{10}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Using Scene Viewer to display interactive 3D models in AR}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developers.google.com/ar/develop/scene-viewer
+      \endverb
+      \verb{url}
+      \verb https://developers.google.com/ar/develop/scene-viewer
+      \endverb
+    \endentry
+    \entry{ArtecPhotogrammetry2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9914726d924ccc560b45264280ec29c7}{%
+           family={Mubanga},
+           familyi={M\bibinitperiod},
+           given={Kanyanta},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Artec 3D}%
+      }
+      \strng{namehash}{9914726d924ccc560b45264280ec29c7}
+      \strng{fullhash}{9914726d924ccc560b45264280ec29c7}
+      \strng{fullhashraw}{9914726d924ccc560b45264280ec29c7}
+      \strng{bibnamehash}{9914726d924ccc560b45264280ec29c7}
+      \strng{authorbibnamehash}{9914726d924ccc560b45264280ec29c7}
+      \strng{authornamehash}{9914726d924ccc560b45264280ec29c7}
+      \strng{authorfullhash}{9914726d924ccc560b45264280ec29c7}
+      \strng{authorfullhashraw}{9914726d924ccc560b45264280ec29c7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{2}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{¿Qué es la fotogrametría? Guía y fundamentos}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.artec3d.com/es/learning-center/what-is-photogrammetry
+      \endverb
+      \verb{url}
+      \verb https://www.artec3d.com/es/learning-center/what-is-photogrammetry
+      \endverb
+    \endentry
+    \entry{YellowScan2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1c955e235ed88e4992a51bd59d4743e9}{%
+           family={{YellowScan}},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {YellowScan}%
+      }
+      \strng{namehash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{fullhash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{fullhashraw}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{bibnamehash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{authorbibnamehash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{authornamehash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{authorfullhash}{1c955e235ed88e4992a51bd59d4743e9}
+      \strng{authorfullhashraw}{1c955e235ed88e4992a51bd59d4743e9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{7}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{LiDAR vs. Fotogrametría: Principales diferencias y aplicaciones}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.yellowscan.com/
+      \endverb
+      \verb{url}
+      \verb https://www.yellowscan.com/
+      \endverb
+    \endentry
+    \entry{PropellerAeroLiDARvsPhoto}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=02e42919422659b172a39963b59b866b}{%
+           family={{Propeller Aero}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Propeller Aero}%
+      }
+      \strng{namehash}{02e42919422659b172a39963b59b866b}
+      \strng{fullhash}{02e42919422659b172a39963b59b866b}
+      \strng{fullhashraw}{02e42919422659b172a39963b59b866b}
+      \strng{bibnamehash}{02e42919422659b172a39963b59b866b}
+      \strng{authorbibnamehash}{02e42919422659b172a39963b59b866b}
+      \strng{authornamehash}{02e42919422659b172a39963b59b866b}
+      \strng{authorfullhash}{02e42919422659b172a39963b59b866b}
+      \strng{authorfullhashraw}{02e42919422659b172a39963b59b866b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{LiDAR vs. fotogrametría: ¿Qué es mejor para su lugar de trabajo?}
+      \field{year}{s.f.}
+      \verb{urlraw}
+      \verb https://www.propelleraero.com/blog/drone-surveying-misconceptions-lidar-vs-photogrammetry/
+      \endverb
+      \verb{url}
+      \verb https://www.propelleraero.com/blog/drone-surveying-misconceptions-lidar-vs-photogrammetry/
+      \endverb
+    \endentry
+    \entry{BBCMundo2018Tikal}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=51a772c4dd6655d7752d0718fc232217}{%
+           family={{BBC Mundo, Redacción}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BBC Mundo}%
+      }
+      \strng{namehash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{fullhash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{fullhashraw}{51a772c4dd6655d7752d0718fc232217}
+      \strng{bibnamehash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{authorbibnamehash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{authornamehash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{authorfullhash}{51a772c4dd6655d7752d0718fc232217}
+      \strng{authorfullhashraw}{51a772c4dd6655d7752d0718fc232217}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{2}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Las impresionantes ruinas mayas descubiertas con una nueva tecnología láser en la jungla de Guatemala}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bbc.com/mundo/noticias-42918183
+      \endverb
+      \verb{url}
+      \verb https://www.bbc.com/mundo/noticias-42918183
+      \endverb
+    \endentry
     \entry{Torres2013}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=51ad8937284360843501e105a21c4039}{%
@@ -376,8 +967,8 @@
       \strng{authornamehash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhashraw}{51ad8937284360843501e105a21c4039}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 18 de agosto de 2025}
@@ -410,8 +1001,8 @@
       \strng{authornamehash}{cd8083e536719f9fdb37bb01c9f479f7}
       \strng{authorfullhash}{cd8083e536719f9fdb37bb01c9f479f7}
       \strng{authorfullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 18 de agosto de 2025}
@@ -443,8 +1034,8 @@
       \strng{authornamehash}{ced49c409a6a2e0373583e494639a061}
       \strng{authorfullhash}{ced49c409a6a2e0373583e494639a061}
       \strng{authorfullhashraw}{ced49c409a6a2e0373583e494639a061}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 18 de agosto de 2025}
