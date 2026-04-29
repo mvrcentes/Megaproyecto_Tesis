@@ -64,6 +64,8 @@
 % \usepackage{bookmark}
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
+\captionsetup{position=top,justification=raggedright,singlelinecheck=false}
+\captionsetup[sub]{position=top,justification=raggedright,singlelinecheck=false}
 \usepackage[titles]{tocloft}
 \renewcommand{\cftfigpresnum}{Figura~}
 \renewcommand{\cftfigaftersnum}{:}
@@ -101,6 +103,7 @@
 \ifdefined\CAPglosario
 	\usepackage[numberedsection,toc]{glossaries}
 	\makenoidxglossaries
+	\renewcommand*{\glossentryname}[1]{\glsnamefont{\glsentryname{#1}:}}
     \input{q-glosario}
 \fi
 
@@ -136,6 +139,8 @@
 \mbox{}
 \newpage
 }
+% Soft clear for chapter breaks: avoids extra blanks in digital build
+\newcommand{\clearchapter}{\ifdefined\printver\cleardoublepage\else\clearpage\fi}
 % ==============================================================================
 
 % Comandos definidos por el usuario en el archivo comandos_usuario.tex
@@ -154,33 +159,34 @@
 	\let\CAPportada\undefined
 \fi
 
-\ifdefined\CAPportada
-	\cleardoublepage\phantomsection
-	% \pdfbookmark{Portada}{toc}
-	\newgeometry{left=3cm, bottom=0in, top=1in, right=3cm}
-	\pagecolor{uvg-green}
-	\thispagestyle{empty}
+% \ifdefined\CAPportada
+% 	\clearchapter\phantomsection
+% 	% \pdfbookmark{Portada}{toc}
+% 	\newgeometry{left=3cm, bottom=0in, top=1in, right=3cm}
+% 	\pagecolor{uvg-green}
+% 	\thispagestyle{empty}
 
-	\color{white}
-	\noindent \hrulefill \par
-	\vspace{0.1in}
-	\noindent \Huge \nohyphens{\titulotesis} \par
-	\noindent \hrulefill \par
-	\noindent
-	\LARGE \nombreestudiante
+% 	\color{white}
+% 	\noindent \hrulefill \par
+% 	\vspace{0.1in}
+% 	\noindent \Huge \nohyphens{\titulotesis} \par
+% 	\noindent \hrulefill \par
+% 	\noindent
+% 	\LARGE \nombreestudiante
 
-	\begin{figure}[b!]
-		%\makebox[\textwidth]{\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}}
-		\makebox[\textwidth]{
-			\begin{overpic}[height=13.25cm]{\imagenportada}
-				\put(63,0){\includegraphics[height=1.15in]{plantilla/fondologo_grande.png}}
-				\put(64.5,2){\includegraphics[height=0.55in]{plantilla/logoUVGblanco.eps}}
-			\end{overpic}
-		}
-		%\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}
-	\end{figure}
-	\restoregeometry
-\fi
+% 	\begin{figure}[b!]
+% 		%\makebox[\textwidth]{\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}}
+% 		\makebox[\textwidth]{
+% 			\begin{overpic}[height=13.25cm]{\imagenportada}
+% 				\put(63,0){\includegraphics[height=1.15in]{plantilla/fondologo_grande.png}}
+% 				\put(64.5,2){\includegraphics[height=0.55in]{plantilla/logoUVGblanco.eps}}
+% 			\end{overpic}
+% 		}
+% 		%\includegraphics[height=13.25cm]{plantilla/portadacit.jpg}
+% 	\end{figure}
+% 	\restoregeometry
+% 	\blankpage
+% \fi
 
 % ==============================================================================
 % PRIMERAS PÁGINAS (Carátulas más hojas de guarda)
@@ -206,13 +212,79 @@
 	\end{figure}
 	\begin{center}
 		% \Large \textbf{\nohyphens{\titulotesis}} \\
-		%\LARGE \textbf{\titulotesis} \\
+		\LARGE \textbf{\titulotesis} \\
 		\vfill
 		\Large \nohyphens{Trabajo de graduación presentado por \nombreestudiante \ para optar al grado académico de Licenciado en \uvgcarrera} \\
 		\vfill
 		\large Guatemala, \\
 		\vspace{1em}
 		\anoentrega
+		\blankpage
+	\end{center}
+
+	\ifdefined\printver
+		\blankpage
+		\blankpage
+
+		\newpage
+		\cleardoublepage\phantomsection
+		\pagecolor{white}
+		\color{black}
+		\setcounter{page}{1}
+		\pagenumbering{roman}
+		\thispagestyle{empty}
+		\begin{center}
+			\LARGE UNIVERSIDAD DEL VALLE DE GUATEMALA\\
+			\LARGE Facultad de \uvgfacultad \\[0.75cm]
+		\end{center}
+		\begin{figure}[h]
+			\begin{center}
+				\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
+				\vspace{0.5in}
+			\end{center}
+		\end{figure} 
+		\begin{center}
+			\Large \textbf{\nohyphens{\titulotesis}} \\
+			%\LARGE \textbf{\titulotesis} \\
+			\vfill
+			\Large \nohyphens{Trabajo de graduación presentado por \nombreestudiante \ para optar al grado académico de Licenciado en \uvgcarrera} \\
+			\vfill
+			\large Guatemala, \\
+			\vspace{1em}
+			\anoentrega
+		\end{center}
+	\fi
+\fi
+
+\ifdefined\CAPcaratula
+	\newpage
+	\cleardoublepage\phantomsection
+	% \pdfbookmark{Carátula}{toc}
+	\pagecolor{white}
+	\color{black}
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+	\thispagestyle{empty}
+	\begin{center}
+		\LARGE UNIVERSIDAD DEL VALLE DE GUATEMALA\\
+		\LARGE Facultad de \uvgfacultad \\[0.75cm]
+	\end{center}
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[height=5.5 cm]{plantilla/escudoUVGnegro.eps}
+			\vspace{0.5in}
+		\end{center}
+	\end{figure}
+	\begin{center}
+		% \Large \textbf{\nohyphens{\titulotesis}} \\
+		\LARGE \textbf{\titulotesis} \\
+		\vfill
+		\Large \nohyphens{Trabajo de graduación presentado por \nombreestudiante \ para optar al grado académico de Licenciado en \uvgcarrera} \\
+		\vfill
+		\large Guatemala, \\
+		\vspace{1em}
+		\anoentrega
+		\blankpage
 	\end{center}
 
 	\ifdefined\printver
@@ -254,28 +326,23 @@
 % ==============================================================================
 \ifdefined\CAPfirmas
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\thispagestyle{empty}
 	\vspace*{0.5in}
 	\large Vo.Bo.:\\[1cm]
 	\begin{center}
 		(f) \rule[1pt]{4 in}{1pt}\\
-		\nombreasesor
+		\nombrecoordinador
 	\end{center}
 	\vspace{1in}
 
-	Tribunal Examinador:\\[1cm]
 	\begin{center}
 		(f) \rule[1pt]{4 in}{1pt}\\
 		\nombreasesor \\[1in]
-		(f) \rule[1pt]{4 in}{1pt}\\
-		\nombreprimerex \\[1in]
-		(f) \rule[1pt]{4 in}{1pt}\\
-		\nombresegundoex
 	\end{center}
 	\vspace{1in}
 
-	Fecha de aprobación: Guatemala, \rule[1pt]{0.5 in}{1pt} de \rule[1pt]{1 in}{1pt} de \anoaprobacion.
+	Fecha de aprobación: Guatemala, 18 de noviembre de \anoaprobacion.
 	\normalsize
 \fi
 
@@ -289,7 +356,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPprefacio
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\chapter*{Prefacio}
 	\ifdefined\parpordefecto
 		\defaultparformat{a-prefacio}
@@ -303,7 +370,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPindice
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\renewcommand{\contentsname}{Índice}
 	%\phantomsection
 	\pdfbookmark{\contentsname}{toc}
@@ -315,7 +382,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPfiguras
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\renewcommand{\listfigurename}{Lista de figuras}
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Lista de figuras}
@@ -325,7 +392,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPcuadros
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\renewcommand{\listtablename}{Lista de cuadros}
 	\listoftables
 	\addcontentsline{toc}{chapter}{Lista de cuadros}
@@ -335,7 +402,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPresumen
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\chapter*{Resumen}
 	\ifdefined\parpordefecto
 		\defaultparformat{b-resumen}
@@ -349,7 +416,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPabstract
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\chapter*{Abstract}
 	\ifdefined\parpordefecto
 		\defaultparformat{c-abstract}
@@ -363,7 +430,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPintroduccion
 	\newpage
-	\cleardoublepage
+	\clearchapter
 	\pagenumbering{arabic}
 	\setcounter{page}{1}
 	\chapter{Introducción}
@@ -498,7 +565,7 @@
 % ------------------------------------------------------------------------------
 \ifdefined\CAPbibliografia
 	\newpage
-	\cleardoublepage\phantomsection
+	\clearchapter\phantomsection
 	\chapter{\bibname}
 	\printbibliography[heading=none]
 \fi

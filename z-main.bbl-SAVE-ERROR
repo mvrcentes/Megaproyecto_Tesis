@@ -19,42 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Kwei2019}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=4b05094565df11f7853745a25495c7f5}{%
-           family={Kwei},
-           familyi={K\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Guatemala.com}%
-      }
-      \strng{namehash}{4b05094565df11f7853745a25495c7f5}
-      \strng{fullhash}{4b05094565df11f7853745a25495c7f5}
-      \strng{fullhashraw}{4b05094565df11f7853745a25495c7f5}
-      \strng{bibnamehash}{4b05094565df11f7853745a25495c7f5}
-      \strng{authorbibnamehash}{4b05094565df11f7853745a25495c7f5}
-      \strng{authornamehash}{4b05094565df11f7853745a25495c7f5}
-      \strng{authorfullhash}{4b05094565df11f7853745a25495c7f5}
-      \strng{authorfullhashraw}{4b05094565df11f7853745a25495c7f5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{13}
-      \field{month}{5}
-      \field{note}{Consultado el 18 de agosto de 2025}
-      \field{title}{Horarios y precios del Parque Arqueológico Kaminaljuyú}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://aprende.guatemala.com/cultura-guatemalteca/actualidad/horarios-precios-parque-arqueologico-kaminaljuyu/
-      \endverb
-      \verb{url}
-      \verb https://aprende.guatemala.com/cultura-guatemalteca/actualidad/horarios-precios-parque-arqueologico-kaminaljuyu/
-      \endverb
-    \endentry
     \entry{Artec2015}{online}{}{}
       \name{author}{1}{}{%
         {{hash=07c215d5ad76248b4e209b3e1567c93f}{%
@@ -72,8 +36,8 @@
       \strng{authornamehash}{07c215d5ad76248b4e209b3e1567c93f}
       \strng{authorfullhash}{07c215d5ad76248b4e209b3e1567c93f}
       \strng{authorfullhashraw}{07c215d5ad76248b4e209b3e1567c93f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{5}
@@ -106,8 +70,8 @@
       \strng{authornamehash}{f4faa748026b36a82b3df39b45c21a2a}
       \strng{authorfullhash}{f4faa748026b36a82b3df39b45c21a2a}
       \strng{authorfullhashraw}{f4faa748026b36a82b3df39b45c21a2a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -157,8 +121,8 @@
       \strng{authornamehash}{823c63e2f3b53da48bc5766ba4d89126}
       \strng{authorfullhash}{6a82a78b1d264e1953ce0cf95181b140}
       \strng{authorfullhashraw}{6a82a78b1d264e1953ce0cf95181b140}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Heritage Science}
@@ -196,8 +160,8 @@
       \strng{authornamehash}{41f97531f3c02a47f5f9a5f6e206fd14}
       \strng{authorfullhash}{41f97531f3c02a47f5f9a5f6e206fd14}
       \strng{authorfullhashraw}{41f97531f3c02a47f5f9a5f6e206fd14}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 30 de octubre de 2025}
@@ -239,8 +203,8 @@
       \strng{authornamehash}{875b5a0611b644af5a485773340b2f16}
       \strng{authorfullhash}{90bf76125e2672c1fb64b6d0d7be7573}
       \strng{authorfullhashraw}{90bf76125e2672c1fb64b6d0d7be7573}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEDISAN}
@@ -250,6 +214,40 @@
       \field{year}{2020}
       \field{pages}{1035\bibrangedash 1048}
       \range{pages}{14}
+    \endentry
+    \entry{HemerotecaPL2016}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a2ff17bb9b73b746b5a3e062074fa40a}{%
+           family={{Hemeroteca PL}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prensa Libre}%
+      }
+      \strng{namehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{fullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{fullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{bibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorbibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authornamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorfullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{authorfullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{month}{8}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Kaminaljuyú: el cerro de los muertos}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \endverb
+      \verb{url}
+      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \endverb
     \endentry
     \entry{FundacionWiese2017}{online}{}{}
       \name{author}{1}{}{%
@@ -285,38 +283,70 @@
       \verb https://www.fundacionwiese.org/blog/es/uso-la-tecnologia-3d-pro-la-arqueologia-arte/
       \endverb
     \endentry
-    \entry{HemerotecaPL2016}{online}{}{}
+    \entry{Barroso2022}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=a2ff17bb9b73b746b5a3e062074fa40a}{%
-           family={{Hemeroteca PL}},
-           familyi={H\bibinitperiod}}}%
+        {{hash=cd8083e536719f9fdb37bb01c9f479f7}{%
+           family={Barroso\bibnamedelima Constante},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Prensa Libre}%
+        {Dialnet}%
       }
-      \strng{namehash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{fullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{fullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{bibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{authorbibnamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{authornamehash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{authorfullhash}{a2ff17bb9b73b746b5a3e062074fa40a}
-      \strng{authorfullhashraw}{a2ff17bb9b73b746b5a3e062074fa40a}
+      \strng{namehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{fullhash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{fullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{bibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorbibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authornamehash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorfullhash}{cd8083e536719f9fdb37bb01c9f479f7}
+      \strng{authorfullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{14}
-      \field{month}{8}
       \field{note}{Consultado el 18 de agosto de 2025}
-      \field{title}{Kaminaljuyú: el cerro de los muertos}
-      \field{year}{2016}
-      \field{dateera}{ce}
+      \field{title}{Realidad aumentada en la educación: motivación y aprendizaje significativo}
+      \field{year}{2022}
       \verb{urlraw}
-      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
       \endverb
       \verb{url}
-      \verb https://www.prensalibre.com/hemeroteca/kaminaljuyu-el-cerro-de-los-muertos/
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
+      \endverb
+    \endentry
+    \entry{Sevilla2017}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ced49c409a6a2e0373583e494639a061}{%
+           family={Sevilla},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Politécnica de Madrid}%
+      }
+      \strng{namehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{fullhash}{ced49c409a6a2e0373583e494639a061}
+      \strng{fullhashraw}{ced49c409a6a2e0373583e494639a061}
+      \strng{bibnamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorbibnamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authornamehash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorfullhash}{ced49c409a6a2e0373583e494639a061}
+      \strng{authorfullhashraw}{ced49c409a6a2e0373583e494639a061}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 18 de agosto de 2025}
+      \field{title}{Realidad Aumentada en Educación}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
+      \endverb
+      \verb{url}
+      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
       \endverb
     \endentry
     \entry{Handley2024}{online}{}{}
@@ -353,6 +383,36 @@
       \endverb
       \verb{url}
       \verb https://es.gizmodo.com/escaneres-3d-revelan-secretos-de-una-momia-egipcia-de-3-000-anos-2000133446
+      \endverb
+    \endentry
+    \entry{UNESCO2003Charter}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Resolución de la Conferencia General GC Res 42, XXXII}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Carta sobre la preservación del patrimonio digital}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://unesdoc.unesco.org/ark:/48223/pf0000122275
+      \endverb
+      \verb{url}
+      \verb https://unesdoc.unesco.org/ark:/48223/pf0000122275
       \endverb
     \endentry
     \entry{Teijeiro2023}{online}{}{}
@@ -572,8 +632,8 @@
       \strng{authornamehash}{71f698950c9cdadc3d19bb7411177a78}
       \strng{authorfullhash}{71f698950c9cdadc3d19bb7411177a78}
       \strng{authorfullhashraw}{71f698950c9cdadc3d19bb7411177a78}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 7 de noviembre de 2025}
@@ -764,6 +824,7 @@
       \strng{authornamehash}{63f0030f4ed434a49b87634fdef8f1bd}
       \strng{authorfullhash}{63f0030f4ed434a49b87634fdef8f1bd}
       \strng{authorfullhashraw}{63f0030f4ed434a49b87634fdef8f1bd}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -948,6 +1009,490 @@
       \verb https://www.bbc.com/mundo/noticias-42918183
       \endverb
     \endentry
+    \entry{Pabon2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=23ae225d808674423e0567db584a2166}{%
+           family={Pabón\bibnamedelima Cadavid},
+           familyi={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Jhonny\bibnamedelima Antonio},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23ae225d808674423e0567db584a2166}
+      \strng{fullhash}{23ae225d808674423e0567db584a2166}
+      \strng{fullhashraw}{23ae225d808674423e0567db584a2166}
+      \strng{bibnamehash}{23ae225d808674423e0567db584a2166}
+      \strng{authorbibnamehash}{23ae225d808674423e0567db584a2166}
+      \strng{authornamehash}{23ae225d808674423e0567db584a2166}
+      \strng{authorfullhash}{23ae225d808674423e0567db584a2166}
+      \strng{authorfullhashraw}{23ae225d808674423e0567db584a2166}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boletín de Historia y Antigüedades}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{number}{865}
+      \field{title}{Preservación del patrimonio cultural digital: retos y perspectivas para la escritura de la historia}
+      \field{volume}{104}
+      \field{year}{2017}
+      \field{pages}{199\bibrangedash 229}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/353677462
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/353677462
+      \endverb
+    \endentry
+    \entry{Xataka2018ARVRMR}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7eb4d269b8f979599503a1714d5f21d3}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Yúbal},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Xataka Basics}%
+      }
+      \strng{namehash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{fullhash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{fullhashraw}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{bibnamehash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{authorbibnamehash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{authornamehash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{authorfullhash}{7eb4d269b8f979599503a1714d5f21d3}
+      \strng{authorfullhashraw}{7eb4d269b8f979599503a1714d5f21d3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{7}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Diferencias entre realidad aumentada, realidad virtual y realidad mixta}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.xataka.com/basics/diferencias-entre-realidad-aumentada-realidad-virtual-y-realidad-mixta
+      \endverb
+      \verb{url}
+      \verb https://www.xataka.com/basics/diferencias-entre-realidad-aumentada-realidad-virtual-y-realidad-mixta
+      \endverb
+    \endentry
+    \entry{Onirix2019HistoryAR}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c167c481fc160161dbad7da729624763}{%
+           family={Sáez\bibnamedelima Martínez},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Pedro\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Onirix}%
+      }
+      \strng{namehash}{c167c481fc160161dbad7da729624763}
+      \strng{fullhash}{c167c481fc160161dbad7da729624763}
+      \strng{fullhashraw}{c167c481fc160161dbad7da729624763}
+      \strng{bibnamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authorbibnamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authornamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authorfullhash}{c167c481fc160161dbad7da729624763}
+      \strng{authorfullhashraw}{c167c481fc160161dbad7da729624763}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{10}
+      \field{note}{Última modificación 22 de junio de 2021. Consultado el 7 de noviembre de 2025}
+      \field{title}{El pasado, presente y futuro de la Realidad Aumentada}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.onirix.com/es/el-pasado-presente-y-futuro-de-la-realidad-aumentada/
+      \endverb
+      \verb{url}
+      \verb https://www.onirix.com/es/el-pasado-presente-y-futuro-de-la-realidad-aumentada/
+      \endverb
+    \endentry
+    \entry{Onirix2021ARKitARCore}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c167c481fc160161dbad7da729624763}{%
+           family={Sáez\bibnamedelima Martínez},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Pedro\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Onirix}%
+      }
+      \strng{namehash}{c167c481fc160161dbad7da729624763}
+      \strng{fullhash}{c167c481fc160161dbad7da729624763}
+      \strng{fullhashraw}{c167c481fc160161dbad7da729624763}
+      \strng{bibnamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authorbibnamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authornamehash}{c167c481fc160161dbad7da729624763}
+      \strng{authorfullhash}{c167c481fc160161dbad7da729624763}
+      \strng{authorfullhashraw}{c167c481fc160161dbad7da729624763}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{month}{11}
+      \field{note}{Última modificación 28 de marzo de 2023. Consultado el 7 de noviembre de 2025}
+      \field{title}{ARKit vs ARCore: La realidad aumentada móvil de Apple y Google}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.onirix.com/es/arkit-vs-arcore-realidad-aumentada-movil/
+      \endverb
+      \verb{url}
+      \verb https://www.onirix.com/es/arkit-vs-arcore-realidad-aumentada-movil/
+      \endverb
+    \endentry
+    \entry{GoogleARCoreOverview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6bc28252c14133d21331dc54856c1797}{%
+           family={{Google Developers}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Google}%
+      }
+      \strng{namehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{fullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \strng{bibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorbibnamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authornamehash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhash}{6bc28252c14133d21331dc54856c1797}
+      \strng{authorfullhashraw}{6bc28252c14133d21331dc54856c1797}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{ARCore overview}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developers.google.com/ar/develop/
+      \endverb
+      \verb{url}
+      \verb https://developers.google.com/ar/develop/
+      \endverb
+    \endentry
+    \entry{AppleARKitOverview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=63f0030f4ed434a49b87634fdef8f1bd}{%
+           family={{Apple Developer Documentation}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apple Inc.}%
+      }
+      \strng{namehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{fullhash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{fullhashraw}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{bibnamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorbibnamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authornamehash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorfullhash}{63f0030f4ed434a49b87634fdef8f1bd}
+      \strng{authorfullhashraw}{63f0030f4ed434a49b87634fdef8f1bd}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{ARKit Overview}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.apple.com/augmented-reality/arkit/
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/augmented-reality/arkit/
+      \endverb
+    \endentry
+    \entry{Schechter2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b330455394221bdf386af65fe7d8d2d0}{%
+           family={Schechter},
+           familyi={S\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {3D Cloud}%
+      }
+      \strng{namehash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{fullhash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{fullhashraw}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{bibnamehash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{authorbibnamehash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{authornamehash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{authorfullhash}{b330455394221bdf386af65fe7d8d2d0}
+      \strng{authorfullhashraw}{b330455394221bdf386af65fe7d8d2d0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{2}
+      \field{note}{Publicado originalmente el 5 de mayo de 2020. Consultado el 7 de noviembre de 2025}
+      \field{title}{Essential Guide to 3D File Formats}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://3dcloud.com/3d-file-formats/
+      \endverb
+      \verb{url}
+      \verb https://3dcloud.com/3d-file-formats/
+      \endverb
+    \endentry
+    \entry{PixelLab2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d43de46e8b491ab918d094ed498f720a}{%
+           family={{Pixel Lab}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pixel Lab}%
+      }
+      \strng{namehash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{fullhash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{fullhashraw}{d43de46e8b491ab918d094ed498f720a}
+      \strng{bibnamehash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{authorbibnamehash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{authornamehash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{authorfullhash}{d43de46e8b491ab918d094ed498f720a}
+      \strng{authorfullhashraw}{d43de46e8b491ab918d094ed498f720a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{8 Best 3D File Formats You Should Use in 2025}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.thepixellab.net/8-best-3d-file-formats
+      \endverb
+      \verb{url}
+      \verb https://www.thepixellab.net/8-best-3d-file-formats
+      \endverb
+    \endentry
+    \entry{HernandezLopez2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a5ae39734b0365a4e744d66fa63e6a56}{%
+           family={Hernández\bibnamedelima Hernández},
+           familyi={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b36001c67c017eef69a9cc4d75e5ab64}{%
+           family={López\bibnamedelima Collazo},
+           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Zeidy\bibnamedelima Sandra},
+           giveni={Z\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{fullhash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{fullhashraw}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{bibnamehash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{authorbibnamehash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{authornamehash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{authorfullhash}{0940c07911df7ef7b89d41fbcf056464}
+      \strng{authorfullhashraw}{0940c07911df7ef7b89d41fbcf056464}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Científica Pedagógica Horizonte Pedagógico}
+      \field{note}{Recibido: 06/02/2021; Aceptado: 16/03/2021; Publicado: 19/03/2021}
+      \field{number}{1}
+      \field{title}{Aplicaciones móviles educativas para el Patrimonio Cultural}
+      \field{volume}{10}
+      \field{year}{2021}
+      \field{pages}{enero\bibrangedash marzo}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://horizontepedagogico.cu/index.php/hop/article/view/185/307
+      \endverb
+      \verb{url}
+      \verb https://horizontepedagogico.cu/index.php/hop/article/view/185/307
+      \endverb
+    \endentry
+    \entry{UNESCOMemoryWorld1992}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Iniciativa internacional para la preservación del patrimonio documental}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Programa Memoria del Mundo}
+      \field{year}{1992}
+      \verb{urlraw}
+      \verb https://www.unesco.org/en/memory-world
+      \endverb
+      \verb{url}
+      \verb https://www.unesco.org/en/memory-world
+      \endverb
+    \endentry
+    \entry{UNESCOIFAP2000}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Marco internacional sobre políticas de información y preservación digital}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Programa Información para Todos (IFAP)}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://www.unesco.org/en/ifap
+      \endverb
+      \verb{url}
+      \verb https://www.unesco.org/en/ifap
+      \endverb
+    \endentry
+    \entry{TICPymes2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3680ff83892e83593546ce2dd6c5d7c3}{%
+           family={{Redacción TICPymes}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TICPymes}%
+      }
+      \strng{namehash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{fullhash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{fullhashraw}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{bibnamehash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{authorbibnamehash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{authornamehash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{authorfullhash}{3680ff83892e83593546ce2dd6c5d7c3}
+      \strng{authorfullhashraw}{3680ff83892e83593546ce2dd6c5d7c3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{9}
+      \field{note}{Publicado originalmente el 18 de mayo de 2021. Consultado el 7 de noviembre de 2025}
+      \field{title}{Las ventajas de la digitalización en la educación}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.channelpartner.es/ticpymes/las-ventajas-de-la-digitalizacion-en-la-educacion/
+      \endverb
+      \verb{url}
+      \verb https://www.channelpartner.es/ticpymes/las-ventajas-de-la-digitalizacion-en-la-educacion/
+      \endverb
+    \endentry
+    \entry{UNESCODigitalEducation2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=24a0ef0a6269be289db4de9570763de3}{%
+           family={{UNESCO}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {UNESCO}%
+      }
+      \strng{namehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{fullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \strng{bibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorbibnamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authornamehash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhash}{24a0ef0a6269be289db4de9570763de3}
+      \strng{authorfullhashraw}{24a0ef0a6269be289db4de9570763de3}
+      \field{extraname}{4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Aprendizaje digital y transformación de la educación}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.unesco.org/es/digital-education
+      \endverb
+      \verb{url}
+      \verb https://www.unesco.org/es/digital-education
+      \endverb
+    \endentry
+    \entry{Bekele2019ImmersiveComparison}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cd605126d031102bb8d1f9eb19203f46}{%
+           family={Bekele},
+           familyi={B\bibinitperiod},
+           given={Mafkereseb\bibnamedelima Kassahun},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=701065b4c3c2984a40f380288e9d7c5c}{%
+           family={Champion},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{fullhash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{fullhashraw}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{bibnamehash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{authorbibnamehash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{authornamehash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{authorfullhash}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \strng{authorfullhashraw}{f4b7cdeda4e348a0424c70bd32cb91d8}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Robotics and AI}
+      \field{note}{Consultado el 7 de noviembre de 2025}
+      \field{title}{Comparación de realidades inmersivas y métodos de interacción: aprendizaje cultural en el patrimonio virtual}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{pages}{91}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/frobt.2019.00091
+      \endverb
+      \verb{urlraw}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC7806021/
+      \endverb
+      \verb{url}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC7806021/
+      \endverb
+    \endentry
     \entry{Torres2013}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=51ad8937284360843501e105a21c4039}{%
@@ -967,8 +1512,8 @@
       \strng{authornamehash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhash}{51ad8937284360843501e105a21c4039}
       \strng{authorfullhashraw}{51ad8937284360843501e105a21c4039}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Consultado el 18 de agosto de 2025}
@@ -980,72 +1525,6 @@
       \endverb
       \verb{url}
       \verb https://dialnet.unirioja.es/servlet/tesis?codigo=58673
-      \endverb
-    \endentry
-    \entry{Barroso2022}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=cd8083e536719f9fdb37bb01c9f479f7}{%
-           family={Barroso\bibnamedelima Constante},
-           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Dialnet}%
-      }
-      \strng{namehash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{fullhash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{fullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{bibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{authorbibnamehash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{authornamehash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{authorfullhash}{cd8083e536719f9fdb37bb01c9f479f7}
-      \strng{authorfullhashraw}{cd8083e536719f9fdb37bb01c9f479f7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Consultado el 18 de agosto de 2025}
-      \field{title}{Realidad aumentada en la educación: motivación y aprendizaje significativo}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
-      \endverb
-      \verb{url}
-      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=8437275
-      \endverb
-    \endentry
-    \entry{Sevilla2017}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=ced49c409a6a2e0373583e494639a061}{%
-           family={Sevilla},
-           familyi={S\bibinitperiod},
-           given={A.\bibnamedelimi B.},
-           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Universidad Politécnica de Madrid}%
-      }
-      \strng{namehash}{ced49c409a6a2e0373583e494639a061}
-      \strng{fullhash}{ced49c409a6a2e0373583e494639a061}
-      \strng{fullhashraw}{ced49c409a6a2e0373583e494639a061}
-      \strng{bibnamehash}{ced49c409a6a2e0373583e494639a061}
-      \strng{authorbibnamehash}{ced49c409a6a2e0373583e494639a061}
-      \strng{authornamehash}{ced49c409a6a2e0373583e494639a061}
-      \strng{authorfullhash}{ced49c409a6a2e0373583e494639a061}
-      \strng{authorfullhashraw}{ced49c409a6a2e0373583e494639a061}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Consultado el 18 de agosto de 2025}
-      \field{title}{Realidad Aumentada en Educación}
-      \field{year}{2017}
-      \verb{urlraw}
-      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
-      \endverb
-      \verb{url}
-      \verb https://oa.upm.es/45985/1/Realidad_Aumentada__Educacion.pdf
       \endverb
     \endentry
   \enddatalist

@@ -1,5 +1,8 @@
 % !TEX root = z-main.tex
 
+\section{Alcance del proyecto}
+El proyecto abarcó el modelado de seis montículos de Kaminaljuyú en Blender 4.3.2, la preparación de materiales y texturas para visualización en tiempo real y la optimización de activos para su integración en una experiencia de realidad aumentada compatible con \gls{ARCore}. El alcance incluye: (i) reconstrucción geométrica y texturizado \gls{PBR} de las estructuras seleccionadas; (ii) exportación en formatos intercambiables (\texttt{.obj/.mtl}) con \gls{uv_mapping} preservado; (iii) pruebas funcionales de visualización e interacción en RA sobre dispositivos Android compatibles. Quedan fuera del alcance: escaneo tridimensional in situ (fotogrametría, LiDAR), animaciones avanzadas, y el desarrollo de una aplicación multiplataforma completa (iOS/ARKit), si bien los activos se dejaron preparados para conversión a \gls{gltf}/\gls{usdz}.
+
 \section{Recursos disponibles}
 El proyecto contó con los recursos necesarios para su desarrollo, incluyendo una estación de trabajo personal con capacidad para ejecutar software de modelado \gls{3d} (Blender 4.3.2), conexión a internet estable y acceso a plataformas como GitHub, OneDrive y Notion para el manejo de versiones, almacenamiento y seguimiento de tareas. Asimismo, se dispuso de la colaboración directa del departamento de arqueología y de la coordinación general del proyecto.
 
@@ -10,7 +13,14 @@ El modelado se desarrolló con una programación semanal, estimándose la elabor
 El proyecto contó con acceso a fuentes primarias proporcionadas por el departamento de arqueología, consistentes en medidas, croquis e imágenes de los montículos. Además, se consultaron fuentes secundarias como artículos académicos, sitios institucionales y documentos de divulgación arqueológica con respaldo oficial, entre ellos el Archivo General de Centroamérica (AGN), la Fundación Wiese y prensa especializada.
 
 \section{Limitaciones del estudio}
-Entre las limitaciones se señaló que los modelos se basaron en estructuras enterradas, por lo que no se contó con escaneos digitales tridimensionales reales del sitio. El modelado se realizó a partir de croquis y medidas aproximadas validadas por la especialista, sin incluir un levantamiento fotogramétrico o topográfico.
+\begin{itemize}
+  \item \textbf{Captura tridimensional.} No se contó con campañas de fotogrametría, escaneo láser o LiDAR del sitio; el modelado fue \emph{manual} a partir de croquis, medidas y referencias arqueológicas validadas, lo que limita la precisión métrica absoluta en comparación con un levantamiento instrumental.
+  \item \textbf{Dependencia de fuentes arqueológicas.} La geometría, proporciones y acabados respondieron a la información proporcionada por el área de arqueología. Cualquier actualización de dichas fuentes puede requerir iteraciones sobre los modelos.
+  \item \textbf{Restricciones de hardware y reproducibilidad.} El desarrollo se realizó en una MacBook M1 Pro (16\,GB RAM). No se presentaron cuellos de botella críticos bajo este entorno; sin embargo, para replicación se recomienda como referencia mínima 16\,GB de RAM, almacenamiento SSD y, de ser posible, GPU con soporte moderno para shaders. Texturas de alta resolución incrementan uso de memoria y tiempos de carga.
+  \item \textbf{Limitaciones de RA en móviles.} La visualización interactiva depende de dispositivos Android compatibles con \gls{ARCore}. Teléfonos no soportados o con sensores/cámaras fuera de especificación pueden presentar inestabilidad de \emph{tracking}, caídas de FPS o incompatibilidad. No se abordó la portabilidad nativa a iOS (\gls{ARKit}) dentro del cronograma.
+  \item \textbf{Restricciones de software y formatos.} La versión objetivo fue Blender 4.3.2 con exportación \texttt{.obj/.mtl}. El flujo de RA exige activos optimizados (conteo poligonal moderado, número reducido de materiales, \gls{atlas_texturas} cuando aplica). 
+  \item \textbf{Rendimiento y tamaño de activos.} Para asegurar usabilidad en RA móvil, se priorizó estabilidad del \emph{tracking} y tasa de cuadros sobre detalle extremo. Esto implica límites prácticos al \gls{poligonaje} y a la resolución/ cantidad de texturas, lo que puede reducir microdetalle visual respecto a un render fuera de línea.
+\end{itemize}
 
 \section{Autorización para publicar la información}
 Se obtuvo autorización del equipo responsable del proyecto para difundir el material como parte del trabajo académico. Los modelos no fueron publicados de forma abierta, sino que se alojaron en repositorios privados y fueron respaldados en OneDrive, respetando el control del equipo sobre su uso.
