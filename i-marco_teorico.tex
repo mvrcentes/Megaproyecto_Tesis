@@ -1,0 +1,247 @@
+% !TEX root = z-main.tex
+
+\section*{Modelado \gls{3d}: fundamentos y aplicaciones}
+
+El modelado \gls{3d} se definió como una técnica de creación digital que permitió construir representaciones tridimensionales de objetos, mediante herramientas computacionales. Fue considerado una forma de escultura digital, en la cual se partía de formas básicas —como cubos, planos o esferas— y se añadía geometría para generar volumen y detalle \cite{Teijeiro2023}. Este proceso combinó aspectos técnicos y artísticos, pues requirió tanto del dominio de programas especializados como de la comprensión de la forma, el espacio y los elementos visuales.
+
+En el ámbito del modelado tridimensional, la \textbf{\gls{topologia} 3D} se refiere a la estructura matemática y geométrica que define cómo los \gls{vertex}, \gls{edge} y \gls{face} de una \gls{malla} se conectan entre sí, determinando la continuidad y coherencia del modelo. Este concepto tiene sus raíces en la \gls{topologia} matemática, disciplina que estudia las propiedades invariantes de los objetos bajo deformaciones continuas —como estiramientos o contracciones— sin que se produzcan rupturas ni nuevas uniones \cite{Macho2002}. En otras palabras, la \gls{topologia} se ocupa de la forma en que los elementos de una superficie se relacionan espacialmente, más que de sus dimensiones métricas. En modelado digital, una buena \gls{topologia} garantiza la correcta deformación del modelo, una distribución eficiente de \gls{poligonaje} y un flujo de geometría adecuado para aplicar \gls{texturizado} o animaciones. Por el contrario, una \gls{topologia} deficiente puede generar artefactos visuales, errores de sombreado o un rendimiento ineficiente al renderizar en tiempo real, especialmente en entornos de realidad aumentada.
+
+\subsection*{Topología óptima en el modelado tridimensional}
+
+Además del fundamento matemático de la \gls{topologia}, en la práctica del modelado \gls{3d} se busca una \textit{topología óptima}, entendida como una organización eficiente de la \gls{malla} que permite conservar el detalle visual con la menor cantidad de \gls{poligonaje} posible. Este principio asegura un flujo de bordes coherente con la forma del objeto, evita distorsiones en el sombreado y mejora el rendimiento en entornos interactivos. Una \gls{malla} con \gls{topologia} optimizada facilita la animación, el \gls{texturizado} y la exportación a formatos ligeros, utilizados en aplicaciones de realidad aumentada. Estos criterios de optimización, reconocidos en la práctica profesional del modelado tridimensional \cite{Linkedin2025}, fueron considerados en la elaboración de los modelos arqueológicos del presente proyecto.
+
+
+\subsection*{Normales: definición y efecto en iluminación y sombreado (Blender)}
+
+En una \gls{malla}, las \textit{\gls{normales}} son vectores perpendiculares asociados a \gls{face}, \gls{edge} o \gls{vertex} que determinan la orientación aparente de la superficie para el cálculo de iluminación y el sombreado. En términos prácticos, las \gls{normales} controlan cómo responde el modelo a la luz (difusa y especular) y cómo se interpola el sombreado entre caras adyacentes; por ello, errores en las \gls{normales} producen artefactos como bandas, brillos irregulares, oscurecimientos y \textit{backface} evidente en tiempo real. En Blender, las operaciones clave incluyen invertir \gls{normales}, recalcularlas hacia fuera/dentro, definirlas desde caras, rotarlas o apuntarlas a un objetivo, y gestionar \gls{normales} personalizadas mediante modificadores como \textit{Editar Normales} o \textit{Influir Normales}; también es posible usar la Intensidad de Cara para ponderar qué caras contribuyen más al valor resultante en un vértice \cite{BlenderManual293Normals}.
+
+Para visualización y depuración, los modos de sombreado de la Vista 3D permiten evidenciar problemas de orientación: el modo Sólido con \textit{Cavities}, la opción de desechar caras traseras (\textit{backface culling}), \textit{MatCaps} y la previsualización de materiales (Eevee) ayudan a identificar \gls{normales} invertidas y transiciones abruptas de sombreado. Ajustar la iluminación de estudio y habilitar sombras en la vista facilita detectar discontinuidades de \gls{normales} y autosombreado \cite{BlenderManual34Shading}. En el contexto de RA móvil, una \gls{topologia} limpia con \gls{normales} coherentes reduce artefactos de sombreado, mejora la estabilidad visual al exportar a \texttt{.obj/.mtl} (preservando \gls{uv_mapping} y materiales), y favorece la consistencia al convertir a formatos ligeros.
+
+\subsection*{UV mapping: fundamento, desenvoltura (unwrap) y relevancia práctica}
+
+El \textit{\gls{uv_mapping}} es el proceso de proyectar una \gls{malla} tridimensional (XYZ) sobre un plano bidimensional (UV) para asociar, píxel a píxel, una imagen o textura con las \gls{face} del modelo. En Blender, el Editor UV permite desenvolver (\textit{unwrap}) la \gls{malla}, definir costuras (\textit{seams}), organizar islas UV y asignar mapas UV activos; de este modo, cada \gls{vertex} obtiene coordenadas \textit{U,V} que referencian posiciones exactas en la textura \cite{BlenderManual291UV}. A diferencia de las texturas procedurales, el mapeo UV ofrece control total para detalles no repetitivos (desgaste, manchas, arañazos, inscripciones) y para calcar patrones provenientes de fotografías o pinturas digitales.
+
+La calidad del mapeo UV incide directamente en el realismo del sombreado y de los materiales \gls{PBR}: una distribución de islas con área proporcional a la geometría reduce el estiramiento, costuras ubicadas en zonas de baja visibilidad evitan cortes perceptibles, y una densidad texel consistente entre islas mantiene nitidez uniforme en todo el modelo. Para formas complejas, los algoritmos automáticos (proyecciones cúbica/cilíndrica/esférica o \textit{Smart UV}) suelen ser insuficientes; el uso deliberado de costuras guía el aplanado con menor distorsión \cite{BlenderManual291UV}. En este proyecto, el flujo consideró: (i) marcación de costuras sobre cambios de curvatura; (ii) verificación de estiramiento con la cuadrícula de prueba; (iii) empaquetado de islas con márgenes adecuados para evitar \textit{bleeding}; y (iv) conservación del mapa UV al exportar a \texttt{.obj/.mtl}. Un mapeo UV bien ejecutado es crucial para lograr texturas realistas y coherentes en los modelos arqueológicos destinados a entornos de realidad aumentada.
+
+
+\subsection*{Texturizado PBR (Physically Based Rendering): principios y aplicación en Blender}
+
+El \textit{\gls{texturizado} \gls{PBR}} es un enfoque de materiales e iluminación que busca reproducir de forma coherente cómo la luz interactúa con las superficies, utilizando modelos físicamente fundados. En la práctica, \gls{PBR} estandariza el uso de mapas como \textit{Base Color/Albedo}, \textit{Roughness} (rugosidad), \textit{Metallic} (metalidad), \textit{Normal} (espacio tangente) y, cuando corresponde, \gls{ambient_occlusion}; estos canales permiten predecir el comportamiento de reflexión difusa y especular, el efecto de \gls{fresnel} y la conservación de energía, logrando activos consistentes bajo diferentes condiciones de iluminación \cite{AdobePBR}.
+
+Para el flujo de trabajo con Blender, \gls{PBR} mejora la precisión visual porque separa propiedades físicas del material (por ejemplo, piedra estucada versus superficies metálicas) de la iluminación de la escena, evitando ajustes ad hoc de color o brillo y manteniendo resultados estables entre visores. Aunque la exportación \texttt{.obj/.mtl} preserva \gls{uv_mapping} y mapas básicos, la organización de texturas en el esquema \gls{PBR} facilita la conversión posterior a formatos orientados a tiempo real (\gls{gltf}/\gls{usdz}) empleados en RA, donde los canales \gls{metallic_roughness}, \gls{normales} y \gls{ambient_occlusion} son de uso común. En este proyecto, la preparación de materiales consideró este esquema para representar de forma más realista las superficies arqueológicas (piedra, tierra compactada, estuco), con variaciones de rugosidad que afectan la nitidez de los brillos y la respuesta angular esperada (\gls{fresnel}), sin depender de la iluminación específica del entorno \cite{AdobePBR}.
+
+
+\subsection*{Retopología: concepto y pertinencia en el flujo de trabajo}
+
+La \textit{\gls{retopologia}} es el proceso de rehacer u optimizar la \gls{topologia} (disposición de \gls{vertex}, \gls{edge} y \gls{face}) de una \gls{malla} para obtener una versión más eficiente, con flujo de aristas limpio y apta para deformación, \gls{uv_mapping} y renderizado en tiempo real. Suele aplicarse tras el esculpido de alta resolución o después de un escaneo 3D, cuando la \gls{malla} resultante presenta densidad excesiva, triángulos irregulares o n-\emph{gons} que dificultan el \gls{texturizado} y la animación \cite{AutodeskRetopo}. El objetivo es simplificar la geometría preservando rasgos esenciales: mejorar el \textit{edge flow}, reducir el recuento de \gls{poligonaje}, y facilitar UVs y materiales con menor distorsión.
+
+Existen enfoques manuales (control total de bucles y colocación de \gls{vertex}), automáticos (algoritmos que generan \gls{malla}s optimizadas con mínima intervención) y semiautomáticos (guías del artista sobre el algoritmo), que se eligen en función de los requisitos del proyecto y las restricciones de tiempo \cite{AutodeskRetopo}. Aunque la \gls{retopologia} aporta ventajas claras (optimización, mejor deformación, reducción de tamaño de archivo, y UVs más consistentes), \textbf{este proyecto no la aplicó de forma específica} porque el modelado se realizó de manera directa en Blender con control de \gls{poligonaje} orientado a RA móvil, evitando \gls{malla}s de alta densidad propias del esculpido o del escaneo. No obstante, su inclusión como referencia metodológica es relevante, dado que proyectos futuros basados en fotogrametría o LiDAR podrían requerir una etapa de \gls{retopologia} para lograr activos eficientes y coherentes con los límites de rendimiento de RA.
+
+
+\subsection*{Buenas prácticas de optimización para modelos \gls{3d} en RA móvil}
+
+El despliegue en RA móvil impone restricciones de CPU/GPU, memoria y ancho de banda. Para sostener la tasa de cuadros y evitar latencias, conviene preparar los activos con criterios de bajo costo de render (\gls{poligonaje}, materiales, texturas) y baja sobrecarga de envío (\gls{draw_call}). A continuación, se resumen lineamientos prácticos compatibles con el flujo de Blender y exportación \texttt{.obj/.mtl}, pensados para una conversión posterior a formatos orientados a tiempo real (\gls{gltf}/\gls{usdz}).
+
+\begin{itemize}
+  \item \textbf{\gls{poligonaje}} y \textit{edge flow}. Mantener el conteo poligonal tan bajo como sea razonable sin sacrificar silueta; priorizar quads limpios y detalle aparente vía mapas de \gls{normales}/bump en lugar de geometría adicional. En móviles, el rendimiento se degrada con \gls{malla}s densas; algunos lineamientos industriales sugieren presupuestos moderados y escalables por escena para asegurar compatibilidad amplia \cite{GoogleARCorePerf}.
+  \item \textbf{Materiales y \gls{draw_call}.} Reducir el número de materiales y combinaciones objeto/material para limitar \gls{draw_call}; agrupar texturas en \gls{atlas_texturas} cuando corresponda y reutilizar materiales para favorecer el batching del motor \cite{UnityDrawCalls2022}. En \gls{gltf}, la estandarización \gls{PBR} \gls{metallic_roughness} ayuda a reutilizar \gls{shader}s \cite{KhronosGLTFSpec}.
+  \item \textbf{Texturas (resolución, compresión, mipmaps).} Ajustar resolución a la distancia de visión esperada (p. ej., 512–2048 px); usar mipmaps para estabilidad visual; preferir compresión GPU cuando el visor lo permita (KTX2/Basis Universal en \gls{gltf}) para reducir memoria y acelerar carga \cite{KhronosKTX2Overview}. En \gls{usdz}, Apple restringe formatos a JPEG/PNG/EXR/AVIF, por lo que conviene dimensionar y comprimir con esas limitaciones en mente \cite{AppleUSDCreate}.
+  \item \textbf{UVs y empaquetado.} Asegurar \gls{uv_mapping} sin estiramientos marcados, con densidad de texel consistente; márgenes suficientes para evitar \textit{bleeding} en mipmaps. Evitar \textit{overdraw} de capas de materiales.
+  \item \textbf{\gls{LOD}} y \textit{culling}. Preparar niveles de detalle (\gls{LOD}) y habilitar \gls{frustum_culling}/\gls{occlusion_culling} en el visor para reducir cómputo según la distancia/cobertura de cámara \cite{UnityDrawCalls2022}.
+  \item \textbf{Validación en dispositivo objetivo.} Probar en hardware real (Android/\gls{ARCore}, iOS/ARKit) y ajustar sobre perfiles de rendimiento: ARCore recomienda diseño centrado en estabilidad (anclajes) y pruebas variadas de dispositivo \cite{GoogleARCorePerf}. Para flujos web/Android, validar con el \textit{Scene Viewer} de Google (\texttt{.glb/.gltf}) antes del despliegue \cite{GoogleSceneViewer}.
+\end{itemize}
+
+En este proyecto, se controló el \gls{poligonaje} desde Blender (sin esculpido pesado), se limitaron materiales y se preservaron \gls{uv_mapping} al exportar \texttt{.obj/.mtl}. Estos activos pueden convertirse a \gls{gltf}/\gls{usdz} para RA, alineando mapas \gls{PBR} (albedo, \gls{normales}, \gls{metallic_roughness}) y aplicando compresión de texturas cuando el visor lo soporte.
+
+
+
+
+
+\section*{Captura tridimensional para patrimonio: fotogrametría, escaneo láser y LiDAR}
+\subsection*{Fotogrametría: principios y uso para generar modelos tridimensionales}
+
+La fotogrametría es el proceso de obtener mediciones fiables a partir de fotografías para reconstruir la geometría de objetos o escenas. A partir de múltiples imágenes con solape y distinta perspectiva, los algoritmos estiman puntos de correspondencia, calculan la orientación de cámara y reconstruyen una nube densa de puntos; posteriormente se genera una malla y se proyectan texturas derivadas de las propias fotografías. Este enfoque permite obtener modelos con alto nivel de detalle a partir de capturas asequibles (cámaras DSLR o incluso móviles), por lo que es ampliamente utilizado en patrimonio, cartografía y VFX \cite{ArtecPhotogrammetry2025}.
+
+La calidad del resultado depende de factores como: (i) cobertura y solape entre disparos (vistas perimetrales y desde diferentes alturas); (ii) control de iluminación para minimizar reflejos y \textit{motion blur}; (iii) presencia de patrones o marcadores que ayuden a la detección de características; y (iv) calibración/EXIF consistentes. Aunque la fotogrametría puede producir mallas muy densas que requieren \textit{retopología} y limpieza para su uso en tiempo real, es una alternativa sólida cuando se busca fidelidad geométrica en activos del patrimonio cultural.
+
+
+\textbf{Ámbito en este proyecto.} La fotogrametría no se utilizó en el presente trabajo: los modelos arqueológicos se construyeron por modelado directo en Blender, con control de poligonaje orientado a RA móvil. Se incluye aquí como marco metodológico, dado que en líneas de investigación futuras (p. ej., campañas de documentación del sitio) podría incorporarse para generar modelos a partir de capturas in situ y posteriormente optimizarlos para visualización en RA.
+
+\subsection*{Fotogrametría, escaneo láser y LiDAR: diferencias y aplicaciones}
+
+En documentación del patrimonio existen varias técnicas de captura tridimensional con naturalezas distintas. A efectos de comparación práctica:
+
+\begin{itemize}
+  \item \textbf{Naturaleza del sensor.} \emph{Fotogrametría} es \emph{pasiva}: infiere geometría a partir de imágenes 2D mediante correspondencias y triangulación; depende de iluminación y textura visible. \emph{LiDAR/escaneo láser} es \emph{activa}: emite pulsos láser y mide tiempos de vuelo para obtener distancias directas; puede operar de día o de noche y tolera baja textura superficial \cite{YellowScan2024,PropellerAeroLiDARvsPhoto}.
+  \item \textbf{Salida de datos.} Fotogrametría produce nubes de puntos densas, mallas y texturas fotorrealistas (RGB). LiDAR genera nubes de puntos 3D con coordenadas e intensidad; puede integrarse con cámaras para \emph{colorizar} la nube o combinarse con fotogrametría para texturizar \cite{YellowScan2024,PropellerAeroLiDARvsPhoto}.
+  \item \textbf{Vegetación y terreno.} En cobertura densa, los pulsos LiDAR pueden atravesar ojos de follaje y recuperar “\emph{bare earth}” (terreno desnudo); la fotogrametría, al ser line-of-sight, no reconstruye lo oculto por la vegetación \cite{YellowScan2024,PropellerAeroLiDARvsPhoto}.
+  \item \textbf{Exactitud, coste y tiempo.} LiDAR suele ofrecer alta precisión vertical y captura rápida de grandes extensiones, con mayor coste de hardware y pericia; la fotogrametría reduce costes pero exige condiciones de captura y un posproceso más intensivo para grandes áreas \cite{YellowScan2024,PropellerAeroLiDARvsPhoto}.
+  \item \textbf{Casos de uso típicos.} LiDAR: silvicultura, monitoreo ambiental, cartografía de terreno bajo dosel y arqueología de paisaje. Fotogrametría: modelos fotorrealistas de yacimientos despejados, arquitectura, VFX y objetos/artefactos \cite{YellowScan2024,PropellerAeroLiDARvsPhoto}.
+\end{itemize}
+
+
+\textbf{Relevancia para sitios mayas (p. ej., Tikal, Petén).} En selva cerrada, LiDAR aero-transportado facilita \emph{DEM} y microtopografía de estructuras ocultas bajo el dosel; la fotogrametría resulta complementaria para texturizar y documentar elementos visibles tras desbroce selectivo o a escala de detalle. Aunque en este proyecto no se aplicaron estas técnicas, se incluyen para enmarcar opciones metodológicas futuras según objetivos (terreno desnudo vs. fotorrealismo) y presupuesto.
+
+\subsection*{Ejemplo documentado: mapeo LiDAR de Tikal (Petén, Guatemala)}
+
+Un caso representativo del uso de \emph{LiDAR} en arqueología de paisaje es el mapeo aéreo en Petén (Guatemala), que reveló más de 60{,}000 estructuras mayas previamente no registradas bajo el dosel forestal, incluyendo plataformas habitacionales, calzadas elevadas y fortificaciones. El estudio, difundido por BBC Mundo (2 de febrero de 2018), destaca que el LiDAR permitió “retirar digitalmente” la cobertura de selva y obtener una imagen tridimensional del terreno, evidenciando una red de asentamientos interconectados y una densidad poblacional mayor a la asumida anteriormente \cite{BBCMundo2018Tikal}. Entre los hallazgos, se subraya la identificación de una pirámide de siete niveles cubierta por vegetación y la detección de murallas defensivas en sitios como El Zotz, elementos que pasaron inadvertidos con métodos tradicionales de prospección en campo \cite{BBCMundo2018Tikal}.
+
+\textbf{Pertinencia para esta tesis.} Aunque el presente trabajo no empleó LiDAR ni fotogrametría, este ejemplo sustenta la inclusión de estas técnicas en el marco teórico: en contextos de selva densa (p. ej., Tikal), el LiDAR aero-transportado es clave para cartografiar microtopografía y \emph{bare earth}; posteriormente, los modelos pueden integrarse en flujos de optimización y visualización (p. ej., \gls{gltf}/\gls{usdz}) para experiencias de RA.
+
+
+
+\section*{Preservación digital del patrimonio cultural}
+
+La \textbf{preservación digital del patrimonio cultural} se entiende como el conjunto de políticas, procesos técnicos y marcos legales destinados a asegurar la \emph{accesibilidad, autenticidad y estabilidad a largo plazo} de los recursos con valor patrimonial que existen en formato digital. Abarca tanto la \emph{información nacida digitalmente} (p.\,ej., sitios web, publicaciones en línea, bases de datos, multimedia) como el \emph{patrimonio digitalizado} (conversiones a digital de soportes analógicos), reconociendo que ambos requieren estrategias diferenciadas pero complementarias \cite{Pabon2017}. En términos operativos, su objetivo no es sólo conservar “el soporte”, sino \emph{el contenido y su contexto} a través del tiempo, de modo que pueda seguir siendo interpretado y reutilizado por las generaciones futuras.
+
+\subsection*{Alcance y gobernanza (UNESCO, Memoria del Mundo)}
+A nivel internacional, la UNESCO ha articulado lineamientos mediante el programa \emph{Memoria del Mundo} y la \textit{Carta sobre la Preservación del Patrimonio Digital} (2003), que creó conciencia sobre la necesidad de políticas para proteger el patrimonio documental en formato digital y asignó a los Estados la responsabilidad primaria de su preservación \cite{Pabon2017,UNESCO2003Charter}. Entre sus principios destacan: i) priorizar lo nacido digital, ii) promover la continuidad digital durante todo el ciclo de vida (desde la creación al uso) y iii) equilibrar el acceso público con los derechos de propiedad intelectual \cite{UNESCO2003Charter}.
+
+\subsection*{Componentes clave}
+\begin{itemize}
+  \item \textbf{Selección y curaduría.} La preservación digital es inseparable de políticas claras de selección: qué se conserva y por qué. La literatura reciente enfatiza que la selección informada puede ser más urgente que la pura accesibilidad técnica, para evitar “pérdidas por desatención” \cite{Pabon2017}.
+  \item \textbf{Autenticidad y estabilidad.} Los objetos digitales deben ser verificables y trazables a lo largo de migraciones y cambios de formato. Los metadatos de preservación proveen el \emph{contexto} necesario para evaluar la autenticidad en el tiempo \cite{Pabon2017,UNESCO2003Charter}.
+  \item \textbf{Acceso presente y a largo plazo.} La preservación se define por posibilitar el \emph{uso sostenido}. Se distinguen dos planos: la accesibilidad a largo plazo (mitigando obsolescencia) y el acceso actual (condiciones legales, culturales y técnicas para el uso efectivo) \cite{Pabon2017}.
+  \item \textbf{Depósito legal digital.} La Carta de la UNESCO señala el \emph{depósito legal} como medida central: actualizar la legislación para incluir publicaciones web permite a bibliotecas/archivos nacionales recolectar y custodiar una muestra representativa del ecosistema digital del país \cite{Pabon2017,UNESCO2003Charter}.
+  \item \textbf{Archivo de la web.} Dada la vida útil efímera de las páginas (se ha estimado en promedios de semanas), la recolección automatizada y selectiva de sitios (\emph{web harvesting}) crea acervos históricos de publicaciones en línea y reduce el riesgo de pérdida \cite{Pabon2017}.
+\end{itemize}
+
+\subsection*{Pertinencia para esta tesis}
+En el marco de reconstrucciones arqueológicas y experiencias de RA, la preservación digital aporta (i) criterios de \emph{selección} (qué versiones, recursos y metadatos conservar), (ii) \emph{garantías de autenticidad} (procedencia, cadena de custodia de modelos, texturas y mapas \gls{PBR}) y (iii) \emph{acceso sostenible} (formatos abiertos como \gls{gltf}/\gls{usdz}, documentación técnica y licencias que favorezcan la reutilización académica). De este modo, los modelos \gls{3d} y materiales asociados se integran a una política de preservación que trasciende la demostración técnica y sustenta la \emph{memoria digital} del sitio arqueológico.
+
+\section*{Realidad aumentada como herramienta educativa y cultural}
+
+\subsection*{Definiciones y diferencias: realidad aumentada (RA), realidad virtual (RV) y realidad mixta (RM)}
+
+A efectos de marco conceptual, distinguimos tres enfoques:\cite{Xataka2018ARVRMR}
+\begin{itemize}
+  \item \textbf{Realidad Virtual (RV).} Inmersión completa en un entorno sintético: el usuario queda visual y auditivamente aislado del mundo real mediante visores opacos (HMD) y audio espacial; los sensores de seguimiento (cabeza/manos) controlan la navegación e interacción en el mundo virtual.
+  \item \textbf{Realidad Aumentada (RA).} Superposición de elementos digitales (modelos, anotaciones, imágenes) sobre la vista del entorno real, ya sea con visores ópticos \emph{see-through} o a través de la cámara de dispositivos móviles. El usuario sigue viendo su contexto físico, enriquecido con información digital.
+  \item \textbf{Realidad Mixta (RM).} Integración de RA y RV: objetos virtuales y reales coexisten e interactúan de forma coherente; algunos cascos permiten alternar entre modos de inmersión total y superposición sobre el entorno mediante \emph{passthrough} y \emph{tracking} avanzado.
+\end{itemize}
+
+
+En esta tesis, la RA se emplea para situar reconstrucciones \gls{3d} sobre el entorno físico del sitio arqueológico (o entornos análogos), priorizando visualización contextual y accesible en dispositivos móviles.
+
+
+\subsection*{Hitos históricos en el desarrollo de la realidad aumentada (RA)}
+
+La evolución de la RA combina avances conceptuales y tecnológicos que habilitaron su uso actual en dispositivos móviles. Una síntesis útil para este marco es la siguiente:\cite{Onirix2019HistoryAR}
+\begin{itemize}
+  \item \textbf{1901.} L. Frank Baum anticipa, en ficción, unas “gafas” que superponen información sobre las personas.
+  \item \textbf{1968.} Ivan Sutherland y Bob Sproull construyen la \emph{Sword of Damocles}, uno de los primeros visores montados en cabeza (HMD) con gráficos superpuestos.
+  \item \textbf{1990.} Thomas Caudell y David Mizell (Boeing) acuñan el término \emph{Augmented Reality} al diseñar ayudas visuales para montaje industrial.
+  \item \textbf{1992.} Louis Rosenberg desarrolla \emph{Virtual Fixtures}, combinando superposiciones con tareas hápticas.
+  \item \textbf{1998.} Aplicación temprana en NASA (X-38) con superposición informativa para operaciones.
+  \item \textbf{2000.} Bruce Thomas lanza \emph{ARQuake}, uno de los primeros juegos de RA con HMD y mochila de cómputo.
+  \item \textbf{2016.} \emph{Pokémon GO} populariza la RA móvil entre el público general.
+  \item \textbf{2017–2018.} Despliegue de marcos de desarrollo \emph{mobile} (Apple \emph{ARKit} y Google \emph{ARCore}), que estandarizan seguimiento y renderizado en iOS/Android, catalizando casos como \emph{IKEA Place} y experiencias educativas.
+\end{itemize}
+
+Estos hitos explican el paso desde prototipos de laboratorio hacia ecosistemas móviles; en esta tesis, la disponibilidad de \emph{toolkits} móviles es el fundamento práctico que permite integrar modelos arqueológicos en RA sobre dispositivos de amplio acceso.
+
+\subsection*{Plataformas móviles: ARCore (Google) y ARKit (Apple)}
+
+En dispositivos móviles, dos marcos dominan el desarrollo de RA: \textbf{ARCore} (Android) y \textbf{ARKit} (iOS). Para desarrolladores, ambos son \emph{frameworks} de seguimiento y renderizado que exponen capacidades de RA al sistema operativo y a los entornos de desarrollo; para usuarios, representan funciones nativas de sus teléfonos que habilitan experiencias de superposición en tiempo real \cite{Onirix2021ARKitARCore}.
+
+\textbf{Capacidades comunes (paridad funcional básica).} En términos prácticos, ARCore y ARKit ofrecen un conjunto de funciones muy similar para experiencias ancladas en el entorno:
+\begin{itemize}
+  \item \emph{Seguimiento de pose y mapeo del entorno (VIO/SLAM).} Estiman en tiempo real la posición y orientación del dispositivo y construyen un mapa local del entorno inmediato, base para posicionar contenido estable en el espacio \cite{Onirix2021ARKitARCore}.
+  \item \emph{Detección de superficies planas y anclajes.} Identifican planos (horizontales/verticales) y permiten crear \emph{anchors} para fijar objetos 3D con persistencia local.
+  \item \emph{\emph{Hit testing}/raycasting.} Intersección de rayos con la geometría comprendida por el sistema para colocar o seleccionar objetos.
+  \item \emph{Estimación de luz.} Exponen intensidad y, según plataforma, características del entorno para adaptar la iluminación del contenido virtual al contexto real.
+  \item \emph{Seguimiento por imagen/objeto.} Permiten registrar imágenes de referencia (posters, marcas) u objetos escaneados para activar contenido cuando se detectan.
+  \item \emph{Comprensión de profundidad y oclusión.} Proveen APIs de profundidad/oclusiones que ayudan a integrar correctamente el orden visual entre objetos reales y virtuales.
+\end{itemize}
+
+\textbf{Rasgos destacados por plataforma.}
+\begin{itemize}
+  \item \emph{ARCore (Android).} Incluye APIs como Depth (oclusiones/colocación más precisa) y \emph{Augmented Images/Faces}; su diseño favorece el despliegue amplio en terminales compatibles y la iteración con visores/web Android \cite{GoogleARCoreOverview}.
+  \item \emph{ARKit (iOS).} En dispositivos con \emph{TrueDepth}/LiDAR, habilita \emph{face tracking}, \emph{people occlusion}, \emph{scene reconstruction} (malla del entorno) y mejoras de \emph{raycasting}/iluminación que elevan la fusión visual cuando el hardware lo permite \cite{AppleARKitOverview}.
+\end{itemize}
+
+\textbf{Compatibilidad.} ARKit está disponible desde iOS~11 (con funciones avanzadas condicionadas al hardware); ARCore soporta Android~7.0+ en una lista de dispositivos certificados. En ambos casos, la disponibilidad de funciones específicas depende del modelo y del sensor (cámara/IMU/LiDAR) \cite{Onirix2021ARKitARCore,GoogleARCoreOverview,AppleARKitOverview}.
+
+\textbf{Nota sobre el proyecto.} La aplicación de esta tesis se desarrolló inicialmente para Android (ARCore). Con vistas a una futura portabilidad a iOS (ARKit), se priorizó el uso de capacidades con \emph{paridad} entre plataformas (seguimiento de pose, planos, anclajes, estimación de luz e interacción básica), evitando depender de funciones exclusivas de hardware (p. ej., LiDAR/face tracking) que no son necesarias para los casos de uso en sitio arqueológico.
+
+\subsection*{Formatos tridimensionales compatibles con realidad aumentada (OBJ, FBX, glTF, USDZ)}
+
+El formato de archivo determina la portabilidad, el rendimiento y la fidelidad visual de los modelos tridimensionales en aplicaciones de realidad aumentada. Entre la amplia variedad existente, cuatro estándares concentran la mayor compatibilidad en entornos móviles y web: \texttt{OBJ}, \texttt{FBX}, \texttt{glTF}/\texttt{GLB} y \texttt{USDZ} \cite{Schechter2025,PixelLab2025}.
+
+\textbf{OBJ (Wavefront Object).} Es un formato neutro y ampliamente soportado por programas de modelado, impresión 3D y motores de visualización. Describe la geometría mediante vértices, normales, coordenadas UV y caras poligonales, acompañadas opcionalmente por un archivo \texttt{.mtl} que define materiales y texturas. Su estructura de texto plano y su independencia de software lo hacen ideal para el intercambio entre aplicaciones, aunque no incluye animaciones ni estructuras jerárquicas complejas.
+
+\textbf{FBX (Filmbox).} Desarrollado por Autodesk, es un formato propietario orientado a flujos de trabajo de animación y videojuegos. Permite almacenar geometría, cámaras, luces, materiales, esqueletos y animaciones completas. Su fortaleza radica en la interoperabilidad entre software 3D (Blender, Maya, Unity, Unreal Engine), aunque su tamaño y naturaleza cerrada lo hacen menos eficiente para entornos móviles o web livianos.
+
+\textbf{glTF y GLB (GL Transmission Format).} Creado por el \emph{Khronos Group}, es un estándar abierto y gratuito optimizado para visualización en tiempo real y aplicaciones web (\emph{WebAR}). glTF utiliza estructura JSON con recursos externos (texturas, binarios), mientras que GLB encapsula todo en un único archivo binario. Ambos soportan animación, materiales \gls{PBR}, compresión de texturas (KTX2/BasisU) y rápida carga, por lo que se consideran el “JPEG de los 3D” en RA moderna.
+
+\textbf{USDZ (Universal Scene Description Zip).} Desarrollado por Pixar y Apple, es el formato nativo para RA en iOS y macOS (\emph{Quick Look}, \emph{RealityKit}). Basado en el estándar \texttt{USD}, agrupa geometría, materiales, luces y animaciones en un solo contenedor sin necesidad de descompresión. Su estructura binaria está altamente optimizada para dispositivos Apple, pero es un formato propietario y menos editable fuera de ese ecosistema.
+
+\textbf{Comparativa práctica.} En Android y WebAR, \texttt{glTF}/\texttt{GLB} ofrece el mejor equilibrio entre compatibilidad, ligereza y fidelidad visual; en iOS, \texttt{USDZ} es obligatorio para RA nativa. Los formatos \texttt{OBJ} y \texttt{FBX} siguen siendo útiles para etapas de producción o conversión intermedia. Por tanto, un flujo de trabajo ideal para proyectos multiplataforma consiste en modelar y texturizar en \texttt{.obj/.fbx} y luego convertir los activos optimizados a \texttt{.glb} o \texttt{.usdz}, preservando mapas \gls{PBR} y jerarquías de escena.
+
+\textbf{Pertinencia en este proyecto.} Los modelos arqueológicos se exportaron en \texttt{.obj/.mtl} por su compatibilidad con Blender y su facilidad de conversión posterior a formatos de RA (\texttt{glTF}/\texttt{USDZ}). Este flujo asegura interoperabilidad entre plataformas Android, iOS y WebAR, alineado con la estrategia de accesibilidad y preservación digital del patrimonio cultural.
+
+
+
+% --- Inserción de aplicaciones educativas y museológicas de la RA ---
+\subsection*{Aplicaciones educativas y museológicas de la RA}
+
+\subsection*{Ejemplos de aplicaciones de RA para patrimonio cultural y educación}
+
+La literatura reciente destaca casos que ilustran el potencial de la RA en museos y sitios patrimoniales, así como en contextos educativos móviles. A continuación se sintetizan ejemplos representativos, útiles para contextualizar el alcance de las experiencias diseñadas en esta tesis \cite{HernandezLopez2021}:
+
+\begin{itemize}
+  \item \textbf{Sorolla Museum AR (España).} Aplicación que superpone contenidos interpretativos sobre obras seleccionadas del Museo Sorolla. El visitante activa la cámara y, al alinear la obra, recibe explicaciones guiadas (personificación del autor, contexto histórico, técnica) y puede capturar fotografías aumentadas. Caso emblemático de mediación educativa con RA in situ \cite{HernandezLopez2021}.
+  \item \textbf{Museo Sefardí (Toledo, España).} App con recorridos aumentados, audioguías, subtítulos, lengua de signos y un \emph{recorrido táctil} para personas con discapacidad visual. Integra maquetas y objetos \emph{tocables} descritos por audio y RA, ejemplificando accesibilidad e inclusión en patrimonio \cite{HernandezLopez2021}.
+  \item \textbf{Museo del Louvre (Francia).} App oficial que centraliza información de colecciones, audio-tours y recorridos; complementariamente, experiencias de RA y asistentes conversacionales facilitan la orientación en sala, la exploración de obras maestras y la difusión a públicos remotos \cite{HernandezLopez2021}.
+  \item \textbf{Louvre Chatbot.} Integración de \emph{chat} con contenidos multimedia y relatos aumentados para presentar obras mediante historias guiadas y preguntas heurísticas; fortalece la interpretación del patrimonio y la participación del visitante \cite{HernandezLopez2021}.
+\end{itemize}
+
+\textbf{Relevancia para este trabajo.} Estos casos respaldan el uso de RA como herramienta para: (i) enriquecer la interpretación del patrimonio mediante superposiciones contextuales; (ii) fomentar aprendizaje experiencial y autónomo; y (iii) mejorar accesibilidad e inclusión (audiodescripción, subtítulos, lengua de signos). La aplicación desarrollada en esta tesis adopta principios afines (anclajes en sitio, materiales \gls{PBR}, modelos optimizados) con despliegue móvil (ARCore) y base exportable a iOS (ARKit).
+
+\subsection*{Programas y declaraciones internacionales para la preservación y digitalización del patrimonio cultural}
+
+La preservación y digitalización del patrimonio cultural cuentan con respaldo en diversos instrumentos internacionales impulsados por la \textbf{UNESCO}, que buscan garantizar el acceso equitativo, la continuidad y la autenticidad del legado cultural en entornos digitales. Entre los más relevantes destacan:
+
+\begin{itemize}
+  \item \textbf{Carta sobre la Preservación del Patrimonio Digital (UNESCO, 2003).} Adoptada por la Conferencia General, establece que los recursos de carácter cultural, educativo, científico o administrativo generados o convertidos a formato digital constituyen un nuevo tipo de patrimonio digno de protección. Reconoce el peligro de pérdida por obsolescencia tecnológica y urge a los Estados a elaborar políticas nacionales de preservación, fortalecer el depósito legal digital, promover el acceso equitativo y fomentar la cooperación internacional \cite{UNESCO2003Charter}.
+  
+  \item \textbf{Programa Memoria del Mundo (UNESCO, 1992).} Busca garantizar la preservación del patrimonio documental de la humanidad y su acceso universal, fomentando la cooperación entre archivos, bibliotecas y museos. Este programa amplía hoy su alcance a contenidos digitales, promoviendo la digitalización de acervos, la normalización de metadatos y el acceso abierto \cite{UNESCOMemoryWorld1992}.
+  
+  \item \textbf{Programa Información para Todos – IFAP (UNESCO, 2000).} Establece un marco internacional para el desarrollo de políticas de información, alfabetización digital y preservación del conocimiento. Promueve la creación de capacidades y la integración de estrategias de preservación digital en los sistemas nacionales de información y cultura \cite{UNESCOIFAP2000}.
+  
+  \item \textbf{Agenda 2030 y Objetivo de Desarrollo Sostenible 11.4.} Incluye entre sus metas fortalecer los esfuerzos para proteger y salvaguardar el patrimonio cultural y natural del mundo, integrando la preservación digital como componente transversal en la gestión sostenible de la cultura.
+\end{itemize}
+
+\textbf{Relevancia para esta tesis.} Estas declaraciones respaldan la digitalización y documentación 3D de sitios arqueológicos como parte de la preservación del patrimonio cultural. Al adherirse a los principios de la UNESCO, la tesis contribuye al objetivo de garantizar la continuidad del conocimiento, la accesibilidad pública y la reutilización académica de los modelos digitales generados.
+
+\subsection*{Beneficios de la digitalización para la investigación, conservación y educación pública}
+
+La \textbf{digitalización} de contenidos culturales y educativos ofrece beneficios estratégicos que trascienden la mera conversión tecnológica: facilita la investigación, garantiza la conservación a largo plazo y democratiza el acceso al conocimiento. Diversas fuentes —como la UNESCO y estudios recientes sobre educación digital— subrayan su valor en tres dimensiones clave \cite{TICPymes2024,UNESCODigitalEducation2025}.
+
+\begin{itemize}
+  \item \textbf{Investigación y conocimiento abierto.} La digitalización incrementa la disponibilidad de recursos para el análisis científico y el trabajo interdisciplinar. En el ámbito patrimonial, los modelos tridimensionales, bases de datos y archivos digitales permiten reproducir observaciones, compartir conjuntos de datos y realizar estudios comparativos sin depender del acceso físico a las piezas originales. Esto reduce el riesgo de manipulación de objetos frágiles y fomenta la colaboración internacional.
+  
+  \item \textbf{Conservación y acceso sostenible.} Digitalizar implica crear copias de seguridad y representaciones de alta fidelidad que mitigan los riesgos de pérdida o deterioro del patrimonio físico. Además, las estrategias de preservación digital permiten mantener la integridad y trazabilidad de los contenidos a largo plazo. En entornos museológicos o arqueológicos, estas copias digitales actúan como salvaguarda frente a catástrofes, obsolescencia o vandalismo, asegurando la continuidad de la memoria cultural.
+  
+  \item \textbf{Educación y divulgación pública.} La digitalización potencia la enseñanza activa y colaborativa, al integrar recursos interactivos, simulaciones y contenidos aumentados en los procesos formativos. Según la UNESCO, las tecnologías digitales “complementan, enriquecen y transforman la educación”, favoreciendo la inclusión y la resiliencia de los sistemas educativos. Estudios sobre digitalización educativa demuestran que esta facilita el aprendizaje a distancia, la personalización del ritmo académico y el acceso equitativo al conocimiento, además de mejorar la motivación y la comprensión mediante entornos visuales e inmersivos \cite{TICPymes2024,UNESCODigitalEducation2025}.
+\end{itemize}
+
+\textbf{Pertinencia para esta tesis.} En el contexto del proyecto, la digitalización de modelos 3D y su integración en una aplicación de RA para Kaminaljuyú contribuyen simultáneamente a los tres ámbitos mencionados: sirven como material de investigación reproducible, como recurso de preservación digital y como herramienta educativa abierta al público. De esta manera, la RA se consolida no sólo como medio tecnológico, sino como estrategia de divulgación cultural alineada con los objetivos de acceso universal y aprendizaje sostenible promovidos por la UNESCO.
+
+\subsection*{Comparación entre métodos tradicionales y experiencias inmersivas}
+
+La investigación reciente ha analizado comparativamente el impacto de los entornos inmersivos frente a los métodos tradicionales en la enseñanza y difusión del patrimonio cultural. Bekele y Champion (2019) identificaron que las tecnologías de realidad aumentada (RA), realidad virtual (RV) y realidad mixta (RMx) mejoran el aprendizaje cultural al generar una relación contextual entre el usuario, el entorno real y los contenidos digitales. 
+
+El estudio evalúa tres factores clave para la eficacia educativa de estas experiencias: \textbf{relación contextual}, \textbf{colaboración} y \textbf{nivel de participación}. Los resultados muestran que la \textit{Realidad Mixta} ofrece el equilibrio más alto entre los tres, permitiendo una interacción simbiótica entre elementos reales y virtuales, mientras que la RV logra mayor inmersión visual, pero menor conexión con el entorno físico. Por su parte, la RA facilita colaboración presencial y una mayor accesibilidad mediante dispositivos móviles, aunque con menor integración entre los dos mundos.
+
+Asimismo, se compararon seis tipos de interfaces de interacción —tangibles, colaborativas, multimodales, basadas en sensores, en dispositivos e híbridas—, concluyendo que las interfaces \textbf{colaborativas y multimodales} son las más efectivas para fomentar el aprendizaje cultural, al asemejar la interacción natural humana y distribuir la carga cognitiva entre varios usuarios.
+
+Estos hallazgos sustentan el valor pedagógico de los entornos inmersivos frente a los métodos tradicionales, al permitir una mayor implicación sensorial, social y cognitiva en el proceso de aprendizaje cultural \cite{Bekele2019ImmersiveComparison}.
+
+Las aplicaciones del modelado \gls{3d} abarcaron múltiples sectores, entre ellos el cine, los videojuegos, la arquitectura, el diseño industrial y, de forma creciente, la museología y la arqueología. En este último ámbito, los modelos tridimensionales facilitaron la reconstrucción de estructuras antiguas con precisión, favoreciendo su estudio y conservación, especialmente cuando los restos físicos estaban fragmentados, deteriorados o, como en Kaminaljuyú, ocultos bajo la urbanización contemporánea. Dichas reconstrucciones se integraron además en entornos de realidad aumentada, ofreciendo experiencias inmersivas independientes del estado físico del sitio.
+
+La realidad aumentada (RA) se describió como una tecnología que permitió superponer elementos digitales —modelos tridimensionales, imágenes, textos o sonidos— sobre la percepción del mundo real en tiempo real. A diferencia de la realidad virtual, que construyó un entorno completamente simulado, la RA combinó el espacio físico con información digital interactiva, enriqueciendo la experiencia del usuario sin aislarlo de su contexto \cite{Torres2013}.
+
+En el ámbito artístico-cultural, la RA abrió nuevas posibilidades para la presentación, interpretación y difusión del patrimonio. Museos y centros de interpretación la adoptaron como parte de sus estrategias museográficas, posibilitando el acceso a información ampliada sobre objetos culturales, la simulación de entornos históricos y la visualización de reconstrucciones virtuales de elementos desaparecidos o dañados. Estas aplicaciones fortalecieron la accesibilidad y la comprensión del contenido expuesto \cite{Torres2013}.
+
+Desde la educación, la RA demostró ser una herramienta eficaz. Su incorporación en procesos de enseñanza-aprendizaje promovió la participación activa, el aprendizaje experiencial y la comprensión de conceptos complejos mediante la interacción directa con representaciones visuales y tridimensionales. Investigaciones recientes evidenciaron que la RA incrementó la motivación del estudiante, mejoró la retención del conocimiento y favoreció el aprendizaje significativo, especialmente en contextos donde los contenidos resultaron difíciles de representar de manera tradicional \cite{Barroso2022,Sevilla2017}. Ambos conceptos, el modelado tridimensional y la realidad aumentada, constituyen los pilares teóricos del presente trabajo, orientado al desarrollo de modelos arqueológicos interactivos para la preservación y divulgación del sitio Kaminaljuyú.

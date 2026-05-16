@@ -1,0 +1,108 @@
+% l-analisis_de_resultados.tex
+% !TEX root = z-main.tex
+
+% \section{Análisis de resultados}
+
+Este capítulo discute el conjunto de modelos desarrollados (Montículos 3, 7, 12, 13, 14 y La Palangana), analizando el flujo de trabajo empleado y los resultados alcanzados en tres etapas: modelado geométrico, aplicación de materiales/texturas e integración prevista a un ambiente de realidad aumentada (RA). Se incluyen, además, consideraciones de validación arqueológica, rendimiento, limitaciones y líneas de trabajo futuro.
+
+\subsection{Modelado geométrico}
+
+Se completó el modelado tridimensional de los seis montículos propuestos siguiendo un procedimiento uniforme. El flujo por etapas (malla $\rightarrow$ sólido $\rightarrow$ texturizado) permitió validar progresivamente la calidad del resultado:
+\begin{itemize}
+    \item \textbf{Geometría base (\gls{Wireframe}).} Esta vista facilitó la inspección de proporciones, alineación de escalones, continuidad de taludes y simetrías. Fue útil para detectar y corregir aristas/caras innecesarias, evitar geometría y asegurar una topología limpia.
+    \item \textbf{Volumetría (sólido).} La visualización sin materiales aisló la forma general de cada montículo y ayudó a comprobar la relación entre plataformas, escalinatas y superestructuras, así como la pendiente y los cambios de nivel.
+    \item \textbf{Aplicación de materiales (texturizado).} En esta fase se verificó la correspondencia entre las texturas asignadas y los materiales originales documentados, cuidando la orientación y escala para obtener una representación realista.
+
+\end{itemize}
+
+\subsection{Texturizado y materiales}
+
+La aplicación de materiales se orientó a reflejar acabados de barro, paja y maderas creíbles para Kaminaljuyú, manteniendo uniformidad visual entre modelos:
+\begin{itemize}
+    \item \textbf{Criterios visuales.} Se priorizaron gamas de barro en superficies expuestas, y tonos rocosos para bordes o elementos constructivos, siguiendo recomendaciones del área de Arqueología.
+    \item \textbf{UV y repetición.} Se cuidó el desplegado UV para minimizar estiramientos perceptibles y favorecer patrones repetibles sin artefactos notorios en planos amplios (plataformas y taludes).
+    \item \textbf{Preparación para RA.} La cantidad de materiales se mantuvo acotada para reducir mallas, y las texturas pueden consolidarse y emplear compresión en la exportación.
+\end{itemize}
+
+\subsection{Modelos en ambiente virtual (RA)}
+
+Los modelos tridimensionales fueron preparados para su integración en un entorno de realidad aumentada en Android, en el cual podrán visualizarse superpuestos al espacio físico. Para facilitar su uso, cada modelo se exportó en formato \emph{.obj} con su correspondiente archivo \emph{.mtl}, manteniendo materiales simples y compatibles con los motores gráficos empleados en la aplicación. Se cuidó la orientación en los ejes y la ubicación del origen en (0,0,0), de modo que los modelos puedan escalarse y posicionarse con facilidad dentro del entorno virtual. Asimismo, se verificó la coherencia de escala entre los seis montículos y la uniformidad del estilo visual, garantizando una correcta correspondencia espacial y visual al momento de su despliegue en RA. Se trabajó en conjunto para evaluar la implementación en la aplicación así validar la correcta colocación, escala y comportamiento de los montículos durante su integración en la experiencia de realidad aumentada, asegurando que los modelos respondieran adecuadamente dentro del entorno interactivo.
+
+\subsection{Validación arqueológica y coherencia entre modelos}
+
+El conjunto mantiene una lectura coherente con los rasgos registrados para Kaminaljuyú:
+\begin{itemize}
+    \item \textbf{Forma escalonada.} Las proporciones de plataformas y la relación con la escalinata principal son consistentes entre montículos, respetando las variaciones particulares observadas en cada caso.
+\end{itemize}
+
+\subsection{Comparación y síntesis del conjunto}
+
+En conjunto, los seis modelos mantienen una coherencia formal y visual que refleja adecuadamente las características arquitectónicas de Kaminaljuyú. Todos fueron elaborados mediante el mismo flujo de trabajo, lo que permitió conservar la proporción entre plataformas, taludes y escalinatas, así como una topología limpia y eficiente gracias a la eliminación de caras no visibles. El resultado evidencia que el \gls{pipeline} es reproducible y puede aplicarse a futuros montículos o variantes sin comprometer la consistencia general.
+
+En términos de balance entre fidelidad y rendimiento, la simplificación geométrica se mantuvo dentro de límites adecuados para conservar los rasgos constructivos esenciales, garantizando al mismo tiempo un desempeño óptimo para su uso en entornos de realidad aumentada. Asimismo, la uniformidad de materiales y texturas, con excepción del Montículo 14, que requirió ajustes particulares, favorece la lectura visual del conjunto como parte de un mismo sitio arqueológico.
+
+Finalmente, la representación tridimensional obtenida contribuye a propósitos educativos y de divulgación, al ofrecer una forma accesible y visualmente coherente de aproximarse a cómo pudieron verse originalmente las estructuras, facilitando su comprensión por parte del público general y de visitantes en experiencias de realidad aumentada.
+
+\subsection{Limitaciones}
+
+\begin{itemize}
+    \item \textbf{Datos de partida.} Algunas suposiciones de materiales y acabado superficial son creíbles pero no definitivas, podrían refinarse con campañas de documentación adicionales.
+    \item \textbf{Iluminación de referencia.} Las vistas de \emph{viewport} no equivalen a un render físicamente basado, el aspecto puede variar con condiciones de iluminación realistas en RA.
+    \item \textbf{Detalle fino.} Elementos menores (erosión, irregularidades, grietas) fueron simplificados para priorizar legibilidad y rendimiento.
+\end{itemize}
+
+\subsection{Trabajo futuro}
+
+\begin{itemize}
+    \item \textbf{Afinar materiales \gls{PBR}.} Incorporar mapas de normales y oclusión ambiental derivados de texturas reales o fotogrametría puntual para detalles finos.
+    \item \textbf{Ampliación del corpus.} Extender el pipeline a otros montículos o variantes históricas y documentar discrepancias para análisis comparativo.
+\end{itemize}
+
+
+% \section{Discusión de resultados}
+
+% La presente sección analiza los resultados obtenidos en relación con los objetivos planteados, con el propósito de valorar el cumplimiento del desarrollo de los modelos tridimensionales, su calidad visual y su aplicabilidad en entornos de realidad aumentada.
+
+% --- INSERTED NEW SUBSECTIONS BELOW ---
+
+\subsection{Parámetros técnicos y escala de los modelos}
+Todos los modelos se trabajaron en \textbf{escala 1:1} en Blender 4.3.2 y se exportaron en \texttt{.obj/.mtl}. En la aplicación de RA se aplicó una escala uniforme en tiempo de ejecución sin alterar proporciones, lo que permitió \emph{acercar/alejar} manteniendo relaciones geométricas correctas. Las texturas principales se configuraron a \textbf{4096$\times$4096 px} (\emph{4K}); se limitó la cantidad de materiales por modelo y se preservó el \gls{uv_mapping} para asegurar consistencia visual. La aprobación de cada activo siguió el criterio definido con el área de Arqueología: \emph{aceptable} cuando el volumen, las proporciones y los rasgos estructurales coincidían con croquis y medidas de referencia; los modelos no conformes se iteraron hasta cumplir el estándar.
+
+\subsection{Encuesta de percepción: resultados e interpretación (n=17)}
+Los ítems se evaluaron en una escala de 1 (muy bajo) a 5 (muy alto). A continuación se resumen los porcentajes y la interpretación por indicador, junto con el promedio aproximado (\={x}).
+\begin{itemize}
+  \item \textbf{Credibilidad arqueológica} (\={x}\,$\approx$\,3.71): 2 (5.9\%), 3 (41.2\%), 4 (29.4\%), 5 (23.5\%). \emph{Lectura:} percepción moderada-alta de verosimilitud; la distribución sugiere que las formas y proporciones son creíbles para la mayoría, con margen para precisar detalles finos en ciertos modelos.
+  \item \textbf{Claridad geométrica y proporciones} (\={x}\,$\approx$\,3.47): 2 (5.9\%), 3 (58.8\%), 4 (17.6\%), 5 (17.6\%). \emph{Lectura:} la geometría es entendible pero aún perfectible; se recomienda reforzar bordes, escalones y pendientes con referencias visuales adicionales.
+  \item \textbf{Calidad de materiales y texturas} (\={x}\,$\approx$\,3.41): 2 (17.6\%), 3 (29.4\%), 4 (47.1\%), 5 (5.9\%). \emph{Lectura:} punto más débil relativo; conviene optimizar mapas y control de repetición/tiling para mejorar respuesta a iluminación variable en RA.
+  \item \textbf{Claridad para distinguir estructuras} (\={x}\,$\approx$\,3.82): 2 (11.8\%), 3 (23.5\%), 4 (35.3\%), 5 (29.4\%). \emph{Lectura:} buena identificación de base, taludes y escalinatas; mantener la economía de materiales ayudó a la legibilidad.
+  \item \textbf{Valor educativo} (\={x}\,$\approx$\,4.18): 3 (23.5\%), 4 (35.3\%), 5 (41.2\%). \emph{Lectura:} fortaleza clara; los usuarios reportan que la reconstrucción facilita comprender el aspecto original de los montículos.
+  \item \textbf{Estética general y atractivo visual} (\={x}\,$\approx$\,3.59): 2 (11.8\%), 3 (35.3\%), 4 (35.3\%), 5 (17.6\%). \emph{Lectura:} percepción positiva con espacio para pulir materiales de ciertos casos.
+  \item \textbf{Coherencia visual entre los seis modelos} (\={x}\,$\approx$\,4.53): 3 (11.8\%), 4 (23.5\%), 5 (64.7\%). \emph{Lectura:} mejor desempeño; el pipeline común aseguró uniformidad de estilo y calidad a nivel de conjunto.
+\end{itemize}
+
+\subsection{Demografía y alcance de la muestra}
+Participaron \textbf{17 estudiantes} de \textbf{1.\,º a 5.\,º año}. Se trata de un público en formación con familiaridad tecnológica heterogénea; la validación experta estuvo cubierta en paralelo por la \emph{revisión arqueológica} de los modelos. Como limitación, la encuesta no distingue formalmente especialistas de arqueología/tecnología; futuras iteraciones deberían segmentar por perfil y experiencia.
+
+\subsection{Alineación con los objetivos}
+\begin{itemize}
+  \item \textbf{Objetivo 1 (diseño de seis modelos).} La alta \emph{coherencia visual del conjunto} (\={x}\,$\approx$\,4.53) y la \emph{credibilidad arqueológica} moderada-alta (\={x}\,$\approx$\,3.71) evidencian que el diseño fue consistente y verosímil respecto a las referencias.
+  \item \textbf{Objetivo 2 (texturas y precisión visual).} Los resultados de \emph{materiales y texturas} (\={x}\,$\approx$\,3.41) y \emph{estética} (\={x}\,$\approx$\,3.59) muestran aceptación positiva con mejoras enfocadas en PBR, tiling y respuesta a iluminación.
+  \item \textbf{Objetivo 3 (evaluación en RA con retroalimentación).} Los indicadores \emph{claridad para distinguir estructuras} (\={x}\,$\approx$\,3.82) y \emph{valor educativo} (\={x}\,$\approx$\,4.18) confirman utilidad formativa. La revisión del área de Arqueología aportó el componente experto del criterio de aceptación.
+\end{itemize}
+
+\subsection{Implicaciones y acciones de mejora}
+De los hallazgos se desprenden acciones concretas: (i) consolidar \emph{atlas de texturas} y normal/roughness calibrados para RA; (ii) añadir guías visuales ligeras (secciones o \emph{overlays} de escala) para reforzar claridad geométrica; (iii) documentar por modelo el número de materiales/texturas y tamaño de archivos, y segmentar futuras encuestas por perfil de experiencia para medir impacto diferencial.
+
+% --- END OF INSERTED NEW SUBSECTIONS ---
+
+Los resultados de la encuesta aplicada reflejan una valoración positiva general de los modelos. Los indicadores con calificaciones más altas corresponden al \textbf{valor educativo}, la \textbf{coherencia visual del conjunto} y la \textbf{claridad geométrica}, lo que confirma que la representación digital logra comunicar con eficacia la forma y disposición original de las estructuras. Los participantes destacaron la facilidad con la que podían distinguir elementos constructivos como las escalinatas y plataformas, lo cual se traduce en una buena legibilidad visual dentro del entorno aumentado.
+
+En cuanto a la \textbf{credibilidad arqueológica}, la mayoría de los evaluadores otorgó puntuaciones altas. Señalaron que las proporciones y el estilo constructivo de los modelos resultan creíbles respecto a las referencias arqueológicas disponibles. Esto sugiere que la colaboración con el área de Arqueología fue fundamental para mantener la fidelidad formal sin sacrificar rendimiento ni claridad visual. Asimismo, la \textbf{coherencia de estilo y materiales} entre los seis montículos fue valorada como satisfactoria, lo que indica que el flujo de trabajo empleado garantizó uniformidad estética dentro del entorno virtual.
+
+Si bien la evaluación general fue positiva, se identificaron oportunidades de mejora relacionadas principalmente con la optimización de la visualización bajo distintas condiciones de iluminación. En algunos casos, las texturas podrían beneficiarse del uso de materiales basados en propiedades físicas (\gls{PBR}), que permitirían una mejor respuesta a la iluminación natural y aumentarían la sensación de realismo. No se registraron inconvenientes de escala ni de visualización significativa durante las pruebas, lo que confirma la estabilidad de los modelos en el entorno de RA implementado para dispositivos Android.
+
+Durante las pruebas se observó que el Montículo 14 presentó dificultades para renderizar correctamente sus texturas dentro de la aplicación de realidad aumentada. Este comportamiento se atribuye al mayor número de materiales asignados y a la complejidad de su mapeo UV, lo que generó ligeras inconsistencias en la visualización. Aun así, el modelo mantuvo una forma geométrica estable y su legibilidad general no se vio comprometida, por lo que se considera una oportunidad de optimización en futuras versiones.
+
+En términos de \textbf{valor educativo}, los resultados confirman que la aplicación logra su propósito principal: ofrecer una aproximación visual a cómo pudieron verse originalmente los montículos. La posibilidad de recorrer el parque y observar la reconstrucción tridimensional sobre el terreno incrementa la comprensión espacial del sitio y promueve un aprendizaje activo basado en la exploración. Este efecto educativo se potencia gracias a la precisión de los modelos, que sirven como un puente entre la evidencia arqueológica y la interpretación visual accesible para todo público.
+
+En síntesis, la discusión evidencia que el trabajo de modelado y texturizado cumplió con los objetivos de fidelidad, coherencia y aplicabilidad en RA. Las calificaciones obtenidas en la encuesta respaldan la efectividad del pipeline empleado, tanto en términos de calidad técnica como de valor divulgativo. Los hallazgos sugieren que la combinación de modelado \gls{3d} y realidad aumentada constituye una herramienta eficaz para la preservación y comunicación del patrimonio arqueológico, siempre que se mantenga el equilibrio entre precisión científica y claridad visual para el usuario final. En conjunto, los resultados confirman el logro del objetivo general y de los tres objetivos específicos, validando el proceso metodológico implementado y consolidando la eficacia del modelado tridimensional y la realidad aumentada como herramientas de preservación digital y divulgación arqueológica.

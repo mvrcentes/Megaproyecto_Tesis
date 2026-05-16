@@ -1,0 +1,73 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+
+# PDF output - usually a bad idea to keep this in Git
+*.pdf
+
+# Latexmk
+*.fdb_latexmk
+
+# SyncTeX
+*.synctex.gz
+
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+
+# BibTeX
+*.bbl
+*.blg
+
+# ------------------------------------------------------------------------------
+# LaTeX (comprehensive) — aux/build artifacts (keep .tex/.bib/.png tracked)
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)*
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdy
+*.lol
+*.thm
+*.ptc
+
+# Files occasionally produced by some editors/compilers
+*~
+*.swp
+*.swo
+
+# Temporary/erroneous builds
+*-SAVE-ERROR
+
+# Log created by Adobe Reader
+C:\\nppdf32Log\\debuglog.txt
+
+# Sublime Text Project Files (usually contain absolute paths)
+*.sublime-project
+*.sublime-workspace
+
+# MacOS files
+.DS_Store
